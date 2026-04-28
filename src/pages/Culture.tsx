@@ -1,17 +1,58 @@
+import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { culturalItems, CulturalItem } from '@/data/culture';
+import CultureFilter from '@/components/culture/CultureFilter';
+import CultureGrid from '@/components/culture/CultureGrid';
+import CultureModal from '@/components/culture/CultureModal';
 
 export default function Culture() {
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedItem, setSelectedItem] = useState<CulturalItem | null>(null);
+
+  const availableCategories = useMemo(() => {
+    const categories = new Set(culturalItems.map((item) => item.category));
+    return Array.from(categories).sort();
+  }, []);
+
+  const filteredItems = useMemo(() => {
+    if (!selectedCategory) {
+      return culturalItems;
+    }
+    return culturalItems.filter((item) => item.category === selectedCategory);
+  }, [selectedCategory]);
+
+  const handleCardClick = (item: CulturalItem) => {
+    setSelectedItem(item);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedItem(null);
+  };
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="max-w-7xl mx-auto px-4 py-16"
-    >
-      <h1 className="text-4xl font-bold text-primary mb-4">Culture</h1>
-      <div className="h-1 w-20 bg-accent mb-8"></div>
-      <p className="text-neutral-600 dark:text-neutral-300 font-body">
-        Experience the festivals, languages, and traditions that bind a billion hearts.
-      </p>
-    </motion.div>
+    <>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="py-8 sm:py-12 lg:py-16" // MainLayout already provides max-width and horizontal padding
+      >
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold text-neutral-800 dark:text-neutral-50 mb-4">
+            Culture of India
+          </h1>
+          <p className="text-lg md:text-xl font-body text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
+            Experience the traditions, festivals, and art forms that define India.
+          </p>
+        </div>
+
+        <div className="flex justify-center mb-12">
+          <CultureFilter categories={availableCategories} onFilter={setSelectedCategory} selectedCategory={selectedCategory} />
+        </div>
+
+        <CultureGrid items={filteredItems} onCardClick={handleCardClick} />
+      </motion.div>
+
+      <CultureModal item={selectedItem} onClose={handleCloseModal} />
+    </>
   );
 }
