@@ -1,8 +1,7 @@
-import { RouterProvider } from 'react-router-dom';
-import { router } from '@/routes/index';
-
 function App() {
-  return <RouterProvider router={router} />;
+  // App component is now empty as RouterProvider is directly in main.tsx
+  // You can add global contexts or providers here if needed.
+  return null;
 }
 
 export default App;
