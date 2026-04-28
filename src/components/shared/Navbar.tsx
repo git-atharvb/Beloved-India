@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Map, Sun, Moon, Menu, X } from 'lucide-react';
+import { Sun, Moon, Menu, X } from 'lucide-react';
 import clsx from 'clsx';
 import { motion, AnimatePresence } from 'framer-motion';
 import useDarkMode from '@/hooks/useDarkMode';
+import belovedIndiaLogo from '@/assets/images/beloved_india_logo.png'; // Import your logo
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -12,6 +13,8 @@ const navLinks = [
   { name: 'Food', path: '/food' },
   { name: 'Heritage', path: '/heritage' },
   { name: 'Geography', path: '/geography' },
+  { name: 'People', path: '/people' },
+  { name: 'Wildlife', path: '/wildlife' },
   { name: 'Explore', path: '/explore' },
 ];
 
@@ -34,12 +37,10 @@ export default function Navbar() {
         {/* Logo */}
         <NavLink
           to="/"
-          className="flex items-center space-x-2 font-heading font-bold text-xl
-                     bg-gradient-to-r from-primary-500 to-accent-500 text-transparent bg-clip-text"
+          className="flex items-center" // Adjusted styling for image logo
           onClick={closeMobileMenu}
         >
-          <Map className="w-6 h-6 text-accent-500" />
-          <span>Beloved India 🇮🇳</span>
+          <img src={belovedIndiaLogo} alt="Beloved India Logo" className="h-8 w-auto" />
         </NavLink>
 
         {/* Desktop Navigation */}

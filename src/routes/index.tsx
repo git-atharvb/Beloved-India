@@ -5,6 +5,8 @@ import Tourism from '@/pages/Tourism';
 import Heritage from '@/pages/Heritage';
 import Geography from '@/pages/Geography';
 import Explore from '@/pages/Explore';
+import People from '@/pages/People';
+import Wildlife from '@/pages/Wildlife';
 import Food from '@/pages/Food'; // Moved import to avoid conflict with previous placeholder
 import Culture from '@/pages/Culture'; // Placeholder page
 
@@ -19,6 +21,8 @@ export const router = createBrowserRouter([
       { path: 'food', element: <Food /> },
       { path: 'heritage', element: <Heritage /> },
       { path: 'geography', element: <Geography /> },
+      { path: 'people', element: <People /> },
+      { path: 'wildlife', element: <Wildlife /> },
       { path: 'explore', element: <Explore /> },
     ],
   },

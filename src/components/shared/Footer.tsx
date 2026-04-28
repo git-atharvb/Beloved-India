@@ -68,7 +68,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="text-center text-sm text-white/70">
           <p>© {new Date().getFullYear()} Beloved India. All rights reserved.</p>
-          <p>Made with ❤️ in India</p>
+          <p>Powered & Developed By Atharv</p>
         </div>
       </div>
     </footer>

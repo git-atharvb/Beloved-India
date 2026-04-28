@@ -6,8 +6,8 @@ import {
   Landmark,     // Heritage
   Globe,        // Geography
   Compass,      // Explore
-  PartyPopper,  // Festivals
-  PawPrint,     // Wildlife
+  Users,        // People
+  PawPrint,     // Wildlife (already there, just ensuring it's used)
 } from 'lucide-react';
 import CategoryCard from './CategoryCard';
 
@@ -49,16 +49,16 @@ const categories = [
     path: '/explore',
   },
   {
-    title: 'Festivals',
-    description: 'Celebrate vibrant Indian festivals.',
-    icon: PartyPopper,
-    path: '/festivals', // Placeholder path
+    title: 'People',
+    description: 'Discover the great personalities who shaped India.',
+    icon: Users,
+    path: '/people',
   },
   {
     title: 'Wildlife',
     description: "Discover India's wildlife sanctuaries.",
     icon: PawPrint,
-    path: '/wildlife', // Placeholder path
+    path: '/wildlife',
   },
 ];
 
