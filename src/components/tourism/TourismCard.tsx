@@ -59,7 +59,7 @@ const StarRating = ({ rating }: { rating: number }) => {
 export default function TourismCard({ destination, index, onToggleFavorite, isFavorite }: TourismCardProps) {
   return (
     <motion.div
-      className="flex flex-col rounded-xl shadow-md bg-white dark:bg-neutral-800 overflow-hidden group"
+      className="card-base group"
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"

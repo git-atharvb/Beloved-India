@@ -1,2 +1,2 @@
 /* Custom Theme Utilities & Overrides */
-/* Add highly specific custom CSS here if needed outside Tailwind */
+/* Moved to globals.css to work with @tailwind directives */

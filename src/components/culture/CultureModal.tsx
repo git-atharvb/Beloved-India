@@ -43,8 +43,7 @@ export default function CultureModal({ item, onClose }: CultureModalProps) {
 
           {/* Modal Content */}
           <motion.div
-            className="relative bg-white dark:bg-neutral-900 rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto
-                       border border-neutral-200 dark:border-neutral-700"
+            className="modal-base max-w-2xl w-full max-h-[90vh] overflow-y-auto"
             variants={modalVariants}
           >
             <button

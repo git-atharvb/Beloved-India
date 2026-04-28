@@ -37,7 +37,7 @@ export default function LoadingScreen() {
         animate={{ scale: 1, opacity: 1, transition: { duration: 0.8, ease: 'easeOut' } }}
       />
       <motion.h2
-        className="text-5xl md:text-7xl font-heading font-bold mb-8 text-center px-4 bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text"
+        className="text-5xl md:text-7xl font-heading font-bold mb-8 text-center px-4 gradient-text"
         style={{ backgroundSize: '250% 250%' }} // Increased background size for more movement
         initial={{ y: 30, opacity: 0, scale: 0.9 }}
         animate={{

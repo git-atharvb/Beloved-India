@@ -8,6 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
+        background: 'var(--bg-color)',
+        foreground: 'var(--fg-color)',
+        card: 'var(--card-bg)',
+        'card-foreground': 'var(--card-fg)',
+        border: 'var(--border-color)',
+        muted: 'var(--muted-bg)',
+        hover: 'var(--hover-bg)',
         primary: {
           DEFAULT: '#FF9933',   // Saffron
           400: '#FFB366', // Lighter shade for text-primary-400 in Hero
