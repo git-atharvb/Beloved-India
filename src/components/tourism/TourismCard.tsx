@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, StarHalf, Heart } from 'lucide-react';
 import { Destination } from '@/data/destinations';

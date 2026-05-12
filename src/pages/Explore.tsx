@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { exploreThemes, ExploreTheme } from '@/data/explore';
+import { exploreThemes } from '@/data/explore';
 import ExploreCategory from '@/components/explore/ExploreCategory';
 import IndiaMap from '@/components/map/IndiaMap';
 import ExploreGrid from '@/components/explore/ExploreGrid';

@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { destinations, Destination } from '@/data/destinations';
+import { destinations } from '@/data/destinations';
 import TourismSearch from '../components/tourism/TourismSearch';
 import TourismFilter from '../components/tourism/TourismFilter';
 import TourismCard from '@/components/tourism/TourismCard';

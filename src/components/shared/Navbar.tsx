@@ -1,10 +1,10 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import clsx from 'clsx';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import useDarkMode from '@/hooks/useDarkMode';
-import belovedIndiaLogo from '@/assets/images/beloved_india_logo.png'; // Import your logo
+import belovedIndiaLogo from '@/assets/images/beloved_india_logo.png';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -22,39 +22,37 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useDarkMode();
 
-  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   const mobileMenuVariants = {
-    hidden: { opacity: 0, y: -50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3, ease: 'easeOut' } },
-    exit: { opacity: 0, y: -50, transition: { duration: 0.2, ease: 'easeIn' } },
+    hidden: { opacity: 0, y: -28 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.24, ease: 'easeOut' } },
+    exit: { opacity: 0, y: -20, transition: { duration: 0.2, ease: 'easeIn' } },
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full glass-effect shadow-sm">
-      <div className="container-width h-16 flex items-center justify-between">
-        {/* Logo */}
-        <NavLink
-          to="/"
-          className="flex items-center" // Adjusted styling for image logo
-          onClick={closeMobileMenu}
-        >
-          <img src={belovedIndiaLogo} alt="Beloved India Logo" className="h-8 w-auto" />
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 dark:border-white/10 glass-effect backdrop-blur-xl shadow-soft">
+      <div className="container-width h-20 flex items-center justify-between gap-6">
+        <NavLink to="/" onClick={closeMobileMenu} className="flex items-center gap-3">
+          <div className="flex h-12 w-12 items-center justify-center rounded-3xl bg-white/90 shadow-sm dark:bg-neutral-950/80">
+            <img src={belovedIndiaLogo} alt="Beloved India Logo" className="h-8 w-auto" />
+          </div>
+          <div>
+            <p className="text-sm font-semibold tracking-[0.22em] uppercase text-primary-600 dark:text-sunrise-400">Beloved India</p>
+            <p className="text-xs text-neutral-500 dark:text-neutral-400">Travel · Culture · Heritage</p>
+          </div>
         </NavLink>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-6 font-body text-sm font-medium">
+        <nav className="hidden xl:flex items-center gap-6 text-sm font-medium">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
               to={link.path}
               className={({ isActive }) =>
                 clsx(
-                  'transition-colors duration-200',
-                  isActive
-                    ? 'text-primary-500 dark:text-primary-400'
-                    : 'text-neutral-600 dark:text-neutral-300 hover:text-accent-500 dark:hover:text-accent-400',
+                  'transition duration-200 ease-out text-neutral-700 dark:text-neutral-200 hover:text-primary-500 dark:hover:text-sunrise-300',
+                  isActive && 'text-primary-600 dark:text-sunrise-300',
                 )
               }
             >
@@ -63,27 +61,27 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Dark Mode Toggle & Mobile Menu Button */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center gap-3">
           <button
+            type="button"
             onClick={() => setIsDarkMode(!isDarkMode)}
-            className="p-2 rounded-full text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors duration-200"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-neutral-200 bg-white text-neutral-800 shadow-sm transition hover:border-primary-300 hover:text-primary-600 dark:border-neutral-700 dark:bg-neutral-950 dark:text-neutral-200 dark:hover:text-sunrise-300"
             aria-label="Toggle dark mode"
           >
-            {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </button>
 
           <button
+            type="button"
             onClick={toggleMobileMenu}
-            className="md:hidden p-2 rounded-full text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors duration-200"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-neutral-200 bg-white text-neutral-800 shadow-sm transition hover:border-primary-300 hover:text-primary-600 dark:border-neutral-700 dark:bg-neutral-950 dark:text-neutral-200 dark:hover:text-sunrise-300 xl:hidden"
             aria-label="Toggle mobile menu"
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.nav
@@ -91,9 +89,9 @@ export default function Navbar() {
             animate="visible"
             exit="exit"
             variants={mobileMenuVariants}
-            className="md:hidden bg-white dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800 pb-4"
+            className="md:hidden border-t border-neutral-200/70 dark:border-neutral-700/70 bg-white/95 dark:bg-neutral-950/95 backdrop-blur-xl"
           >
-            <div className="flex flex-col items-center space-y-4 pt-4">
+            <div className="container-width flex flex-col gap-3 py-4 text-center">
               {navLinks.map((link) => (
                 <NavLink
                   key={link.path}
@@ -101,10 +99,10 @@ export default function Navbar() {
                   onClick={closeMobileMenu}
                   className={({ isActive }) =>
                     clsx(
-                      'text-lg font-medium transition-colors duration-200 w-full text-center py-2',
+                      'rounded-3xl px-4 py-3 text-base font-medium transition duration-200 ease-out',
                       isActive
-                        ? 'text-primary-500 dark:text-primary-400 bg-neutral-100 dark:bg-neutral-800'
-                        : 'text-neutral-700 dark:text-neutral-200 hover:text-accent-500 dark:hover:text-accent-400 hover:bg-neutral-50 dark:hover:bg-neutral-850',
+                        ? 'bg-primary-50 text-primary-700 dark:bg-sunrise-500/10 dark:text-sunrise-200'
+                        : 'text-neutral-700 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-900',
                     )
                   }
                 >

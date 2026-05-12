@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { regions, Region } from '@/data/geography';
+import { regions } from '@/data/geography';
 import RegionFilter from '@/components/geography/RegionFilter';
 import RegionGrid from '@/components/geography/RegionGrid';
 

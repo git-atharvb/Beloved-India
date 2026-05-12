@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { heritageItems } from '@/data/heritage';
 import TimelineItem from './TimelineItem';
 

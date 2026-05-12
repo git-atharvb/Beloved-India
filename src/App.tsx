@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { RouterProvider } from 'react-router-dom';
 import { router } from '@/routes/index';
 import LoadingScreen from '@/components/shared/LoadingScreen';
@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 10000); // 10-second delay
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);

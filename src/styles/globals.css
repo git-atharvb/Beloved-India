@@ -1,14 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@500;600;700;800&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply font-body text-foreground bg-background transition-colors duration-300;
+  :root {
+    color-scheme: light;
+    --bg-color: #fffdf9;
+    --fg-color: #111827;
+    --surface-color: #f7f3ee;
+    --card-bg: rgba(255, 255, 255, 0.92);
+    --card-fg: #111827;
+    --border-color: rgba(15, 23, 42, 0.08);
+    --muted-bg: rgba(15, 23, 42, 0.04);
+    --hover-bg: rgba(255, 154, 51, 0.1);
+    --shadow-color: rgba(15, 23, 42, 0.08);
   }
-  h1, h2, h3, h4, h5, h6 {
+
+  html {
+    scroll-behavior: smooth;
+    background: radial-gradient(circle at 14% 16%, rgba(255, 211, 138, 0.18), transparent 16%),
+      radial-gradient(circle at 90% 12%, rgba(19, 136, 8, 0.12), transparent 20%),
+      radial-gradient(circle at 50% 100%, rgba(79, 95, 251, 0.08), transparent 30%),
+      var(--bg-color);
+  }
+
+  body {
+    @apply min-h-screen font-body text-foreground bg-background antialiased transition-colors duration-500;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  ::selection {
+    background: rgba(255, 154, 51, 0.24);
+    color: #111827;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  img {
+    @apply block max-w-full;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+
+  .gradient-text {
+    background-image: linear-gradient(110deg, #ff6a31 0%, #ffaf4d 45%, #26aa77 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .card-surface {
+    @apply rounded-[2rem] border border-white/20 bg-white/85 text-left shadow-soft backdrop-blur-xl;
+  }
+
+  .pulse-ring {
+    position: relative;
+  }
+
+  .pulse-ring::before {
+    content: '';
+    position: absolute;
+    inset: -0.35rem;
+    border-radius: 9999px;
+    background: rgba(255, 154, 51, 0.1);
+    filter: blur(18px);
+  }
+}
+
+@layer utilities {
+  .container-width {
+    width: min(100% - 2rem, 1320px);
+    margin-inline: auto;
+  }
+
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-overlay {
+    background: radial-gradient(circle at top left, rgba(255, 154, 51, 0.28), transparent 28%),
+      radial-gradient(circle at bottom right, rgba(19, 136, 8, 0.22), transparent 30%);
+  }
+
+  .feature-pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/85 px-4 py-2 text-sm text-neutral-700 shadow-sm backdrop-blur-xl;
+  }
+
+  .hero-card {
+    @apply rounded-[2rem] border border-white/10 bg-white/90 p-6 shadow-[0_40px_120px_-70px_rgba(255,154,51,0.45)] backdrop-blur-2xl;
   }
 }
