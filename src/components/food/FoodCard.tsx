@@ -29,7 +29,7 @@ const cardVariants = {
 export default function FoodCard({ food, index, onClick }: FoodCardProps) {
   return (
     <motion.div
-      className="card-base cursor-pointer group"
+      className="card-surface cursor-pointer group"
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
@@ -43,15 +43,15 @@ export default function FoodCard({ food, index, onClick }: FoodCardProps) {
         <div
           className={`w-full h-full bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-110 ${food.image}`}
         />
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute inset-0 bg-black/40 dark:bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <span className="text-white text-lg font-semibold">View Details</span>
         </div>
       </div>
       <div className="p-4 flex-grow">
-        <h3 className="font-heading font-semibold text-xl text-neutral-800 dark:text-neutral-100">
+        <h3 className="font-heading font-semibold text-xl text-fg-primary dark:text-fg-primary">
           {food.name}
         </h3>
-        <p className="text-sm text-neutral-500 dark:text-neutral-400">{food.region}</p>
+        <p className="text-sm text-fg-secondary dark:text-fg-secondary">{food.region}</p>
       </div>
     </motion.div>
   );

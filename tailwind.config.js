@@ -16,6 +16,39 @@ export default {
         border: 'var(--border-color)',
         muted: 'var(--muted-bg)',
         hover: 'var(--hover-bg)',
+        // Indian-inspired colors
+        'primary-saffron': 'var(--primary-saffron)',
+        'primary-green': 'var(--primary-green)',
+        'primary-blue': 'var(--primary-blue)',
+        'accent-gold': 'var(--accent-gold)',
+        'accent-copper': 'var(--accent-copper)',
+        'accent-teal': 'var(--accent-teal)',
+        'accent-magenta': 'var(--accent-magenta)',
+        'accent-violet': 'var(--accent-violet)',
+        'accent-emerald': 'var(--accent-emerald)',
+        'accent-coral': 'var(--accent-coral)',
+        'accent-indigo': 'var(--accent-indigo)',
+        // Background colors
+        'bg-primary': 'var(--bg-primary)',
+        'bg-secondary': 'var(--bg-secondary)',
+        'bg-tertiary': 'var(--bg-tertiary)',
+        // Foreground colors
+        'fg-primary': 'var(--fg-primary)',
+        'fg-secondary': 'var(--fg-secondary)',
+        'fg-muted': 'var(--fg-muted)',
+        // Surface colors
+        'surface-primary': 'var(--surface-primary)',
+        'surface-secondary': 'var(--surface-secondary)',
+        'surface-tertiary': 'var(--surface-tertiary)',
+        // Border colors
+        'border-primary': 'var(--border-primary)',
+        'border-secondary': 'var(--border-secondary)',
+        'border-accent': 'var(--border-accent)',
+        // Shadow colors
+        'shadow-primary': 'var(--shadow-primary)',
+        'shadow-secondary': 'var(--shadow-secondary)',
+        'shadow-accent': 'var(--shadow-accent)',
+        'shadow-glow': 'var(--shadow-glow)',
         primary: {
           50: '#fff3e3',
           100: '#ffe0c6',

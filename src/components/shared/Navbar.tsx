@@ -43,10 +43,10 @@ export default function Navbar() {
   return (
     <>
       <motion.header
-        className="glass-effect rainbow-border"
+        className="glass-effect"
         animate={{
-          scale: isShrunk ? 0.9 : 1,
-          y: isShrunk ? -10 : 0,
+          scale: isShrunk ? 0.95 : 1,
+          y: isShrunk ? -5 : 0,
         }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
       >
@@ -75,8 +75,8 @@ export default function Navbar() {
                 to={link.path}
                 className={({ isActive }) =>
                   clsx(
-                    'transition duration-200 ease-out px-3 py-2 rounded-full color-transition',
-                    isActive && 'rainbow-shadow glow-on-hover',
+                    'transition duration-200 ease-out px-3 py-2 rounded-lg color-transition',
+                    isActive && 'bg-primary-saffron/10 text-primary-saffron font-semibold',
                   )
                 }
               >
@@ -89,7 +89,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setIsDarkMode(!isDarkMode)}
-              className="inline-flex items-center justify-center rounded-full glass-effect h-11 w-11 glow-on-hover"
+              className="inline-flex items-center justify-center rounded-lg glass-effect h-10 w-10 hover:bg-primary-saffron/10 transition-colors duration-200"
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? <Sun className={clsx(isShrunk ? "h-4 w-4" : "h-5 w-5")} /> : <Moon className={clsx(isShrunk ? "h-4 w-4" : "h-5 w-5")} />}
@@ -98,7 +98,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={toggleMobileMenu}
-              className="inline-flex items-center justify-center rounded-full glass-effect h-11 w-11 glow-on-hover xl:hidden"
+              className="inline-flex items-center justify-center rounded-lg glass-effect h-10 w-10 hover:bg-primary-saffron/10 transition-colors duration-200 xl:hidden"
               aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? <X className={clsx(isShrunk ? "h-5 w-5" : "h-6 w-6")} /> : <Menu className={clsx(isShrunk ? "h-5 w-5" : "h-6 w-6")} />}
@@ -124,8 +124,8 @@ export default function Navbar() {
                   onClick={closeMobileMenu}
                   className={({ isActive }) =>
                     clsx(
-                      'rounded-3xl px-4 py-3 text-base font-medium transition duration-200 ease-out color-transition',
-                      isActive && 'rainbow-shadow glow-on-hover',
+                      'rounded-lg px-4 py-3 text-base font-medium transition duration-200 ease-out color-transition',
+                      isActive && 'bg-primary-saffron/10 text-primary-saffron font-semibold',
                     )
                   }
                 >

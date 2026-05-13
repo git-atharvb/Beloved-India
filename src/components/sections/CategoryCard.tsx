@@ -41,7 +41,7 @@ const iconVariants = {
 export default function CategoryCard({ icon: Icon, title, description, path, index }: CategoryCardProps) {
   return (
     <motion.div
-      className="card-surface glow-on-hover cursor-pointer"
+      className="card-surface cursor-pointer"
       variants={cardVariants}
       initial="hidden"
       animate="visible"
@@ -50,19 +50,19 @@ export default function CategoryCard({ icon: Icon, title, description, path, ind
       custom={index}
     >
       {/* Gradient Overlay for background effect on hover */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.1] to-accent/[0.1] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-saffron/10 to-accent-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
       <Link to={path} className="relative z-10 block h-full">
         <motion.div
-          className="mb-4 text-primary glow-on-hover"
+          className="mb-4 text-primary-saffron dark:text-accent-gold glow-on-hover"
           variants={iconVariants}
         >
           <Icon size={48} strokeWidth={1.5} />
         </motion.div>
-        <h3 className="text-xl font-heading font-semibold gradient-text mb-2">
+        <h3 className="text-xl font-heading font-semibold text-primary-saffron dark:text-accent-gold mb-2">
           {title}
         </h3>
-        <p className="text-sm font-body color-transition">
+        <p className="text-sm font-body text-fg-secondary dark:text-fg-secondary color-transition">
           {description}
         </p>
       </Link>

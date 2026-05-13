@@ -83,7 +83,7 @@ export default function CategorySection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          <h2 className="text-4xl md:text-5xl font-heading font-bold gradient-text mb-4">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary-saffron dark:text-accent-gold mb-4">
             Explore Incredible India
           </h2>
           <p className="text-lg md:text-xl font-body text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">

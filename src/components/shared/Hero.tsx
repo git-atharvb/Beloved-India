@@ -34,28 +34,25 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden min-h-[calc(100vh-5rem)] vibrant-bg">
-      <div className="absolute inset-0 hero-overlay opacity-90" />
-      <div className="absolute left-1/2 top-16 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl floating-animation" />
-      <div className="absolute right-12 top-1/3 h-[320px] w-[320px] rounded-full bg-oasis/20 blur-3xl floating-animation" />
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white via-white/30 to-transparent dark:from-neutral-950 dark:via-neutral-950/70 dark:to-transparent" />
+      <div className="absolute inset-0 hero-overlay" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white via-white/50 to-transparent dark:from-neutral-950 dark:via-neutral-950/70 dark:to-transparent" />
 
       <div className="relative z-10 container-width py-24 lg:py-32">
         <div className="grid gap-12 lg:grid-cols-[1.8fr_1.2fr] items-center">
           <motion.div className="space-y-8" initial="hidden" animate="visible" variants={textVariants}>
-            <span className="feature-pill">
-              <span className="h-2.5 w-2.5 rounded-full bg-primary-500 animate-pulse" />
-              Vibrant journeys through India’s soul
+            <span className="feature-pill text-sm font-medium text-primary-saffron dark:text-accent-gold">
+              Discover India's timeless heritage and vibrant culture
             </span>
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-6xl xl:text-7xl font-heading font-black tracking-tight gradient-text">
-                Discover the <span className="gradient-text">Soul of India</span> with immersive travel stories.
+              <h1 className="text-5xl md:text-6xl xl:text-7xl font-heading font-bold tracking-tight text-primary-saffron dark:text-accent-gold">
+                Discover the <span className="text-primary-green dark:text-accent-teal">Soul of India</span> with immersive travel stories.
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-neutral-600 dark:text-neutral-300">
                 Explore unforgettable cultural journeys, stunning landscapes, and modern travel experiences designed to inspire every explorer.
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-              <Link to="/explore" className="inline-flex w-full items-center justify-center rounded-full rainbow-shadow px-8 py-4 text-sm font-semibold text-white glow-on-hover sm:w-auto">
+              <Link to="/explore" className="inline-flex w-full items-center justify-center rounded-lg bg-primary-saffron hover:bg-primary-saffron/90 px-8 py-4 text-sm font-semibold text-white transition-colors duration-200 sm:w-auto">
                 Start Exploring
               </Link>
               <Link to="/tourism" className="inline-flex w-full items-center justify-center rounded-full glass-effect px-8 py-4 text-sm font-semibold color-transition sm:w-auto">
@@ -75,7 +72,7 @@ export default function Hero() {
 
             <div className="mt-10 grid gap-4">
               {stats.map((stat, index) => (
-                <div key={stat.label} className={`rounded-3xl glass-effect p-5 transition duration-300 ${activeStat === index ? 'rainbow-shadow glow-on-hover' : 'color-transition'}`}>
+                <div key={stat.label} className={`rounded-xl glass-effect p-5 transition duration-300 ${activeStat === index ? 'ring-2 ring-primary-saffron/50 bg-primary-saffron/5' : ''}`}>
                   <p className="text-xs uppercase tracking-[0.24em] text-neutral-500 dark:text-neutral-400">{stat.label}</p>
                   <p className="mt-3 text-3xl font-heading font-bold text-neutral-950 dark:text-white">{stat.value}</p>
                 </div>

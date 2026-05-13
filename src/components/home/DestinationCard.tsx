@@ -45,7 +45,7 @@ const StarRating = ({ rating }: { rating: number }) => {
 export default function DestinationCard({ destination, index }: DestinationCardProps) {
   return (
     <motion.div
-      className="card-surface glow-on-hover cursor-pointer"
+      className="card-surface cursor-pointer"
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
@@ -61,7 +61,7 @@ export default function DestinationCard({ destination, index }: DestinationCardP
       <div className="p-4 flex-grow flex flex-col">
         <div className="flex justify-between items-start mb-2">
           <div>
-            <h3 className="font-heading font-semibold text-lg gradient-text">
+            <h3 className="font-heading font-semibold text-lg text-primary-saffron dark:text-accent-gold">
               {destination.name}
             </h3>
             <p className="text-sm color-transition">{destination.state}</p>

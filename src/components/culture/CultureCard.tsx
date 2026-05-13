@@ -29,7 +29,7 @@ const cardVariants = {
 export default function CultureCard({ item, index, onClick }: CultureCardProps) {
   return (
     <motion.div
-      className="card-base cursor-pointer group"
+      className="card-surface cursor-pointer group"
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"

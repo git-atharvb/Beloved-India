@@ -24,7 +24,7 @@ export default function FeaturedDestinations() {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          <h2 className="text-4xl md:text-5xl font-heading font-bold gradient-text mb-4">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary-saffron dark:text-accent-gold mb-4">
             Featured Destinations
           </h2>
           <p className="text-lg md:text-xl font-body text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
@@ -49,7 +49,7 @@ export default function FeaturedDestinations() {
         <div className="text-center mt-12">
           <Link to="/tourism">
             <motion.button
-              className="px-8 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-lg"
+              className="px-8 py-3 rounded-full bg-gradient-to-r from-primary-saffron to-accent-gold text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
               whileHover={{
                 scale: 1.05,
                 boxShadow: '0px 0px 16px rgba(255, 153, 51, 0.4)',

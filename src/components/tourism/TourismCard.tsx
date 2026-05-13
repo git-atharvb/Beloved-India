@@ -58,7 +58,7 @@ const StarRating = ({ rating }: { rating: number }) => {
 export default function TourismCard({ destination, index, onToggleFavorite, isFavorite }: TourismCardProps) {
   return (
     <motion.div
-      className="card-base group"
+      className="card-surface group"
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
