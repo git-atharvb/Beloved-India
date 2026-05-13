@@ -11,7 +11,7 @@ export default function MainLayout() {
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
       <Navbar />
-      <main className="flex-grow bg-background transition-colors duration-300 pt-24">
+      <main className="flex-grow vibrant-bg pt-24">
         <div className="container-width section-padding">
           <AnimatePresence mode="wait">
             <motion.div

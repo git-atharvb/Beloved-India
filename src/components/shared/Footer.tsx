@@ -17,16 +17,16 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-neutral-950 text-white py-16">
+    <footer className="relative overflow-hidden vibrant-bg text-white py-16">
       <div className="absolute inset-x-0 top-0 h-64 bg-[radial-gradient(circle_at_top,_rgba(255,154,51,0.18),transparent_40%)]" />
       <div className="container-width relative grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr] items-start">
-        <div className="rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-soft backdrop-blur-xl">
-          <p className="text-sm uppercase tracking-[0.24em] text-sunrise-200/70">Beloved India</p>
-          <h2 className="mt-4 text-3xl font-heading font-bold text-white">Journey beyond the ordinary.</h2>
-          <p className="mt-4 max-w-md text-sm leading-7 text-neutral-300">
+        <div className="card-surface">
+          <p className="text-sm uppercase tracking-[0.24em] gradient-text">Beloved India</p>
+          <h2 className="mt-4 text-3xl font-heading font-bold gradient-text">Journey beyond the ordinary.</h2>
+          <p className="mt-4 max-w-md text-sm leading-7 color-transition">
             A beautiful guide for every traveler who wants to explore India’s heritage, cuisine, people, and vibrant landscapes.
           </p>
-          <div className="mt-8 inline-flex items-center rounded-full bg-white/10 px-5 py-3 text-sm text-white/90 shadow-soft ring-1 ring-white/10">
+          <div className="mt-8 feature-pill">
             <span className="mr-3 h-2.5 w-2.5 rounded-full bg-primary-400 animate-pulse" />
             Ready for your next adventure?
           </div>

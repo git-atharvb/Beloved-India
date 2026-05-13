@@ -14,9 +14,8 @@ export default function Timeline() {
     <div className="relative wrap overflow-hidden p-4 md:p-10 h-full">
       {/* Center Line */}
       <div
-        className="absolute h-full border border-neutral-300 dark:border-neutral-700
+        className="absolute h-full border-dashed border-neutral-300 dark:border-neutral-700
                    left-4 md:left-1/2"
-        style={{ borderStyle: 'dashed' }}
       />
 
       {/* Timeline Items */}

@@ -80,12 +80,17 @@ export default {
       },
       boxShadow: {
         glow: '0 20px 90px rgba(255, 154, 51, 0.16)',
+        'glow-pink': '0 20px 90px rgba(255, 0, 150, 0.3)',
+        'glow-cyan': '0 20px 90px rgba(0, 255, 200, 0.3)',
+        'glow-yellow': '0 20px 90px rgba(255, 255, 0, 0.3)',
+        'glow-purple': '0 20px 90px rgba(150, 0, 255, 0.3)',
+        'glow-rainbow': '0 20px 90px rgba(255, 154, 51, 0.16), 0 0 30px rgba(255, 0, 150, 0.2), 0 0 60px rgba(0, 255, 200, 0.15)',
         soft: '0 18px 60px rgba(15, 23, 42, 0.12)',
         glass: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
       },
       backgroundImage: {
-        'mesh-light': 'radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%), radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%), radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%), radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%), radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%), radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%), radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%)',
-        'mesh-dark': 'radial-gradient(at 40% 20%, hsla(28,100%,74%,0.1) 0px, transparent 50%), radial-gradient(at 80% 0%, hsla(189,100%,56%,0.1) 0px, transparent 50%), radial-gradient(at 0% 50%, hsla(355,100%,93%,0.1) 0px, transparent 50%), radial-gradient(at 80% 50%, hsla(340,100%,76%,0.1) 0px, transparent 50%), radial-gradient(at 0% 100%, hsla(22,100%,77%,0.1) 0px, transparent 50%), radial-gradient(at 80% 100%, hsla(242,100%,70%,0.1) 0px, transparent 50%), radial-gradient(at 0% 0%, hsla(343,100%,76%,0.1) 0px, transparent 50%)',
+        'mesh-light': 'radial-gradient(at 20% 10%, hsla(320, 100%, 70%, 0.8) 0px, transparent 40%), radial-gradient(at 80% 10%, hsla(180, 100%, 60%, 0.7) 0px, transparent 40%), radial-gradient(at 40% 40%, hsla(60, 100%, 70%, 0.6) 0px, transparent 40%), radial-gradient(at 10% 80%, hsla(240, 100%, 75%, 0.8) 0px, transparent 40%), radial-gradient(at 90% 80%, hsla(120, 100%, 65%, 0.7) 0px, transparent 40%), radial-gradient(at 60% 60%, hsla(300, 100%, 80%, 0.6) 0px, transparent 40%), radial-gradient(at 30% 90%, hsla(0, 100%, 75%, 0.8) 0px, transparent 40%)',
+        'mesh-dark': 'radial-gradient(at 20% 10%, hsla(320, 100%, 70%, 0.4) 0px, transparent 40%), radial-gradient(at 80% 10%, hsla(180, 100%, 60%, 0.35) 0px, transparent 40%), radial-gradient(at 40% 40%, hsla(60, 100%, 70%, 0.3) 0px, transparent 40%), radial-gradient(at 10% 80%, hsla(240, 100%, 75%, 0.4) 0px, transparent 40%), radial-gradient(at 90% 80%, hsla(120, 100%, 65%, 0.35) 0px, transparent 40%), radial-gradient(at 60% 60%, hsla(300, 100%, 80%, 0.3) 0px, transparent 40%), radial-gradient(at 30% 90%, hsla(0, 100%, 75%, 0.4) 0px, transparent 40%)',
       },
       fontFamily: {
         heading: ['Poppins', 'sans-serif'],

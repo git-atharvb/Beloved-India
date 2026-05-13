@@ -45,7 +45,7 @@ const StarRating = ({ rating }: { rating: number }) => {
 export default function DestinationCard({ destination, index }: DestinationCardProps) {
   return (
     <motion.div
-      className="flex flex-col rounded-xl shadow-md bg-white dark:bg-neutral-800 overflow-hidden group cursor-pointer"
+      className="card-surface glow-on-hover cursor-pointer"
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
@@ -61,10 +61,10 @@ export default function DestinationCard({ destination, index }: DestinationCardP
       <div className="p-4 flex-grow flex flex-col">
         <div className="flex justify-between items-start mb-2">
           <div>
-            <h3 className="font-heading font-semibold text-lg text-neutral-800 dark:text-neutral-100">
+            <h3 className="font-heading font-semibold text-lg gradient-text">
               {destination.name}
             </h3>
-            <p className="text-sm text-neutral-500 dark:text-neutral-400">{destination.state}</p>
+            <p className="text-sm color-transition">{destination.state}</p>
           </div>
           <div className="flex items-center gap-1">
             <StarRating rating={destination.rating} />
@@ -73,7 +73,7 @@ export default function DestinationCard({ destination, index }: DestinationCardP
             </span>
           </div>
         </div>
-        <p className="text-sm font-body text-neutral-600 dark:text-neutral-300 flex-grow">
+        <p className="text-sm font-body color-transition flex-grow">
           {destination.description}
         </p>
       </div>

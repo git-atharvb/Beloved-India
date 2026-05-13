@@ -23,7 +23,7 @@ export default function LoadingScreen() {
   }, []);
 
   return (
-    <motion.div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-gradient-to-br from-sunrise-50 via-white to-oasis-100 dark:from-twilight-950 dark:via-neutral-950 dark:to-black" exit={{ opacity: 0, transition: { duration: 0.8, ease: 'easeInOut' } }}>
+    <motion.div className="fixed inset-0 z-[100] flex flex-col items-center justify-center vibrant-bg" exit={{ opacity: 0, transition: { duration: 0.8, ease: 'easeInOut' } }}>
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute left-1/2 top-1/4 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/20 blur-3xl" />
         <div className="absolute right-16 top-1/2 h-56 w-56 rounded-full bg-oasis/20 blur-3xl" />
@@ -34,7 +34,7 @@ export default function LoadingScreen() {
       </motion.h2>
       <div className="relative h-10 text-center px-6">
         <AnimatePresence mode="wait">
-          <motion.p key={index} className="text-base font-medium text-neutral-600 dark:text-neutral-300" initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { duration: 0.45 } }} exit={{ y: -20, opacity: 0, transition: { duration: 0.45 } }}>
+          <motion.p key={index} className="text-base font-medium color-transition" initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { duration: 0.45 } }} exit={{ y: -20, opacity: 0, transition: { duration: 0.45 } }}>
             {loadingTexts[index]}
           </motion.p>
         </AnimatePresence>

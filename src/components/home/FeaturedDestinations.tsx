@@ -14,8 +14,8 @@ const containerVariants = {
 
 export default function FeaturedDestinations() {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="section-padding vibrant-bg">
+      <div className="container-width">
         {/* Section Header */}
         <motion.div
           className="text-center mb-12"
@@ -24,7 +24,7 @@ export default function FeaturedDestinations() {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-neutral-800 dark:text-neutral-50 mb-4">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold gradient-text mb-4">
             Featured Destinations
           </h2>
           <p className="text-lg md:text-xl font-body text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
