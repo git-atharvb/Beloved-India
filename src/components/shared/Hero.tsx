@@ -41,7 +41,7 @@ export default function Hero() {
       {/* Fade out bottom to blend with next section */}
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none" />
 
-      <div className="relative z-10 container-width pt-24 pb-20 lg:pt-32 lg:pb-24">
+      <div className="relative z-10 container-width pt-10 pb-20 lg:pt-12 lg:pb-24">
         <div className="grid gap-12 lg:grid-cols-[1fr_1fr] items-center">
           
           {/* Text Content */}
@@ -97,7 +97,7 @@ export default function Hero() {
         </div>
 
         {/* Features Grid - Bento Style */}
-        <div className="mt-24 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-24 grid gap-6 sm:grid-cols-2 xl:grid-cols-4 group-hover-dim">
           {features.map((feature, idx) => (
             <motion.div 
               key={feature.title} 
@@ -105,7 +105,7 @@ export default function Hero() {
               whileInView={{ opacity: 1, y: 0 }} 
               viewport={{ once: true, margin: "-50px" }} 
               transition={{ duration: 0.6, ease: 'easeOut', delay: idx * 0.1 }}
-              className="h-full"
+              className="h-full group-hover-target"
             >
               <GlassCard interactive className="p-6 h-full flex flex-col">
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-saffron/10 text-primary-saffron mb-6">

@@ -7,6 +7,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'fluid-sm': 'clamp(0.875rem, 1vw + 0.5rem, 1rem)',
+        'fluid-base': 'clamp(1rem, 1.5vw + 0.5rem, 1.125rem)',
+        'fluid-lg': 'clamp(1.125rem, 2vw + 0.5rem, 1.5rem)',
+        'fluid-xl': 'clamp(1.5rem, 3vw + 0.5rem, 2rem)',
+        'fluid-2xl': 'clamp(2rem, 4vw + 1rem, 3rem)',
+        'fluid-3xl': 'clamp(2.5rem, 5vw + 1rem, 4rem)',
+        'fluid-4xl': 'clamp(3rem, 7vw + 1rem, 5rem)',
+      },
       colors: {
         background: 'var(--bg-primary)',
         foreground: 'var(--fg-primary)',
