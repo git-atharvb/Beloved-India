@@ -8,6 +8,13 @@
   :root {
     color-scheme: light;
     
+    /* VIBRANT GRADIENT PALETTE: Light Mode */
+    --color-cyan: #0891b2; /* cyan-600 */
+    --color-pink: #db2777; /* pink-600 */
+    --color-orange: #ea580c; /* orange-600 */
+    --color-violet: #7c3aed; /* violet-600 */
+    --color-blue: #2563eb; /* blue-600 */
+
     /* ===== PRIMARY COLORS: Indian-inspired Palette ===== */
     --primary-saffron: #FF9933;
     --primary-green: #138808;
@@ -77,9 +84,25 @@
   .dark {
     color-scheme: dark;
 
-    /* PRIMARY COLORS: Remain vibrant in dark mode */
-    --primary-blue: #4682B4;
-    --accent-copper: #CD853F;
+    /* VIBRANT GRADIENT PALETTE: Dark Mode */
+    --color-cyan: #22d3ee;
+    --color-pink: #f472b6;
+    --color-orange: #fb923c;
+    --color-violet: #a78bfa;
+    --color-blue: #60a5fa;
+
+    /* PRIMARY COLORS: Legacy support */
+    --primary-saffron: #fb923c;
+    --primary-green: #22d3ee;
+    --primary-blue: #60a5fa;
+    --accent-gold: #fb923c;
+    --accent-copper: #f472b6;
+    --accent-teal: #22d3ee;
+    --accent-magenta: #f472b6;
+    --accent-violet: #a78bfa;
+    --accent-emerald: #22d3ee;
+    --accent-coral: #fb923c;
+    --accent-indigo: #a78bfa;
 
     /* BACKGROUND COLORS: Dark Mode */
     --bg-primary: #0a0a0a;
@@ -143,7 +166,7 @@
 
   /* Keep basic selection styling */
   ::selection {
-    background: rgba(255, 153, 51, 0.3);
+    background: rgba(6, 182, 212, 0.3);
     color: var(--fg-primary);
   }
 
@@ -183,7 +206,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-saffron);
+  background: var(--color-cyan);
 }
 
 @layer components {
@@ -240,12 +263,15 @@
   }
 
   /* Gradient Text Utility */
-  .gradient-text-saffron {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[var(--primary-saffron)] to-[var(--accent-magenta)];
+  .gradient-text-brand {
+    background-image: linear-gradient(to right, var(--color-cyan), var(--color-violet), var(--color-pink));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .shiny-button {
-    background: linear-gradient(135deg, var(--primary-saffron) 0%, var(--accent-gold) 50%, var(--primary-saffron) 100%);
+    background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-violet) 50%, var(--color-pink) 100%);
     background-size: 200% 200%;
     animation: shimmer 3s ease-in-out infinite;
     color: white;
@@ -255,7 +281,7 @@
   
   .shiny-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(255, 153, 51, 0.4);
+    box-shadow: 0 8px 25px rgba(6, 182, 212, 0.4);
   }
 }
 

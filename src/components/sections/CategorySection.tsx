@@ -74,8 +74,9 @@ const containerVariants = {
 
 export default function CategorySection() {
  return (
- <section className="section-padding vibrant-bg">
- <div className="container-width">
+ <section className="section-padding bg-background relative overflow-hidden">
+ <div className="absolute top-[10%] left-[10%] w-[30%] h-[30%] rounded-full bg-brand-pink bg-opacity-10 blur-[120px] pointer-events-none" />
+ <div className="container-width relative z-10">
  {/* Section Header */}
  <motion.div
  className="text-center mb-12"
@@ -83,10 +84,10 @@ export default function CategorySection() {
  animate={{ opacity: 1, y: 0 }}
  transition={{ duration: 0.6, ease: 'easeOut' }}
  >
- <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary-saffron mb-4">
+ <h2 className="text-4xl md:text-5xl font-heading font-bold gradient-text-brand mb-4">
  Explore Incredible India
  </h2>
- <p className="text-lg md:text-xl font-body text-neutral-600 max-w-2xl mx-auto">
+ <p className="text-lg md:text-xl font-body text-fg-secondary max-w-2xl mx-auto">
  Choose a category to begin your journey.
  </p>
  </motion.div>

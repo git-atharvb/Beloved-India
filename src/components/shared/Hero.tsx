@@ -32,33 +32,33 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden min-h-[calc(100vh-5rem)] flex flex-col justify-center bg-background">
+    <section className="relative overflow-hidden min-h-[calc(100vh-5rem)] flex flex-col justify-start bg-background">
       {/* Dynamic Performant Background Orbs */}
-      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary-saffron/20 blur-[120px] pointer-events-none transform translate-z-0" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-accent-magenta/10 blur-[150px] pointer-events-none transform translate-z-0" />
-      <div className="absolute top-[40%] left-[60%] w-[30%] h-[30%] rounded-full bg-primary-green/10 blur-[100px] pointer-events-none transform translate-z-0" />
+      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-cyan-600/20 dark:bg-cyan-400/20 blur-[120px] pointer-events-none transform translate-z-0" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-pink-600/10 dark:bg-pink-400/10 blur-[150px] pointer-events-none transform translate-z-0" />
+      <div className="absolute top-[40%] left-[60%] w-[30%] h-[30%] rounded-full bg-violet-600/10 dark:bg-violet-400/10 blur-[100px] pointer-events-none transform translate-z-0" />
 
       {/* Fade out bottom to blend with next section */}
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none" />
 
-      <div className="relative z-10 container-width pt-10 pb-20 lg:pt-12 lg:pb-24">
+      <div className="relative z-10 container-width pt-6 pb-20 lg:pt-8 lg:pb-24">
         <div className="grid gap-12 lg:grid-cols-[1fr_1fr] items-center">
           
           {/* Text Content */}
           <motion.div className="space-y-8" initial="hidden" animate="visible" variants={textVariants}>
-            <span className="inline-block px-4 py-1.5 rounded-full bg-primary-saffron/10 border border-primary-saffron/20 text-sm font-medium text-primary-saffron backdrop-blur-md">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-cyan-600/10 dark:bg-cyan-400/10 border border-cyan-600/20 dark:border-cyan-400/20 text-sm font-medium text-brand-cyan backdrop-blur-md">
               Discover India's timeless heritage and vibrant culture
             </span>
             <div className="space-y-6">
               <h1 className="text-5xl md:text-6xl xl:text-7xl font-heading font-extrabold tracking-tighter text-foreground leading-[1.1]">
-                Discover the <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-saffron to-accent-magenta">Soul of India</span> with immersive travel stories.
+                Discover the <span className="gradient-text-brand">Soul of India</span> with immersive travel stories.
               </h1>
               <p className="max-w-2xl text-lg md:text-xl leading-relaxed text-fg-secondary">
                 Explore unforgettable cultural journeys, stunning landscapes, and modern travel experiences designed to inspire every explorer.
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center pt-4">
-              <Link to="/explore" className="inline-flex w-full items-center justify-center rounded-xl bg-primary-saffron hover:bg-primary-saffron/90 px-8 py-4 text-base font-semibold text-white transition-all duration-300 sm:w-auto shadow-premium-sm hover:shadow-glow-saffron hover:-translate-y-0.5">
+              <Link to="/explore" className="inline-flex w-full items-center justify-center rounded-xl shiny-button px-8 py-4 text-base sm:w-auto">
                 Start Exploring
               </Link>
               <Link to="/tourism" className="inline-flex w-full items-center justify-center rounded-xl bg-surface border border-border hover:bg-hover px-8 py-4 text-base font-semibold text-foreground transition-all duration-300 sm:w-auto shadow-sm hover:shadow-md hover:-translate-y-0.5">
@@ -108,7 +108,7 @@ export default function Hero() {
               className="h-full group-hover-target"
             >
               <GlassCard interactive className="p-6 h-full flex flex-col">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-saffron/10 text-primary-saffron mb-6">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-pink bg-opacity-10 text-brand-pink mb-6">
                   <feature.icon size={24} strokeWidth={2} />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-2">{feature.title}</h3>
@@ -124,7 +124,7 @@ export default function Hero() {
         animate={{ y: [0, 10, 0] }} 
         transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
       >
-        <div className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-surface/80 text-foreground shadow-premium-sm backdrop-blur-md pointer-events-auto cursor-pointer hover:bg-hover transition-colors">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-white/80 dark:bg-[#0f0f0f]/80 text-foreground shadow-premium-sm backdrop-blur-md pointer-events-auto cursor-pointer hover:bg-hover transition-colors">
           <ChevronDown className="h-5 w-5" />
         </div>
       </motion.div>

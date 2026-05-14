@@ -43,7 +43,7 @@ export default function Navbar() {
       <motion.header
         className={clsx(
           "w-full max-w-7xl pointer-events-auto rounded-3xl border transition-all duration-300",
-          "backdrop-blur-2xl bg-surface/70 border-border shadow-premium-glass"
+          "backdrop-blur-2xl bg-white/70 dark:bg-[#0f0f0f]/70 border-border shadow-premium-glass"
         )}
         animate={{
           scale: isShrunk ? 0.98 : 1,
@@ -61,7 +61,7 @@ export default function Navbar() {
               transition={{ duration: 0.3 }}
               className="whitespace-nowrap"
             >
-              <p className="text-sm font-bold tracking-[0.2em] uppercase text-primary-saffron">Beloved India</p>
+              <p className="text-sm font-bold tracking-[0.2em] uppercase gradient-text-brand">Beloved India</p>
               <p className="text-xs text-fg-muted font-medium">Travel · Culture · Heritage</p>
             </motion.div>
           </NavLink>
@@ -73,8 +73,8 @@ export default function Navbar() {
                 to={link.path}
                 className={({ isActive }) =>
                   clsx(
-                    'relative px-4 py-2 rounded-xl transition-colors duration-200 hover:text-primary-saffron hover:bg-primary-saffron/5 text-foreground',
-                    isActive && 'text-primary-saffron font-semibold bg-primary-saffron/10'
+                    'relative px-4 py-2 rounded-xl transition-colors duration-200 hover:text-brand-cyan hover:bg-cyan-600/5 dark:hover:bg-cyan-400/5 text-foreground',
+                    isActive && 'text-brand-cyan font-semibold bg-cyan-600/10 dark:bg-cyan-400/10'
                   )
                 }
               >
@@ -87,7 +87,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={toggleMobileMenu}
-              className="inline-flex items-center justify-center rounded-xl bg-surface/50 border border-border h-10 w-10 hover:bg-hover transition-colors duration-200 xl:hidden text-foreground"
+              className="inline-flex items-center justify-center rounded-xl bg-white/50 dark:bg-[#0f0f0f]/50 border border-border h-10 w-10 hover:bg-hover transition-colors duration-200 xl:hidden text-foreground"
               aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -103,7 +103,7 @@ export default function Navbar() {
             animate="visible"
             exit="exit"
             variants={mobileMenuVariants}
-            className="w-[min(95vw,420px)] pointer-events-auto mt-4 self-end rounded-3xl backdrop-blur-2xl bg-surface/90 border border-border shadow-premium-glass"
+            className="w-[min(95vw,420px)] pointer-events-auto mt-4 self-end rounded-3xl backdrop-blur-2xl bg-white/90 dark:bg-[#0f0f0f]/90 border border-border shadow-premium-glass"
           >
             <div className="flex flex-col gap-1 py-4 px-4 w-full">
               {navLinks.map((link) => (
@@ -114,7 +114,7 @@ export default function Navbar() {
                   className={({ isActive }) =>
                     clsx(
                       'rounded-xl px-4 py-3 text-base font-medium transition-colors duration-200 text-foreground hover:bg-hover',
-                      isActive && 'bg-primary-saffron/10 text-primary-saffron font-bold'
+                      isActive && 'bg-cyan-600/10 dark:bg-cyan-400/10 text-brand-cyan font-bold'
                     )
                   }
                 >

@@ -26,18 +26,25 @@ export default {
         muted: 'var(--bg-tertiary)',
         hover: 'var(--surface-hover)',
         
-        // Indian-inspired colors
-        'primary-saffron': 'var(--primary-saffron)',
-        'primary-green': 'var(--primary-green)',
-        'primary-blue': 'var(--primary-blue)',
-        'accent-gold': 'var(--accent-gold)',
-        'accent-copper': 'var(--accent-copper)',
-        'accent-teal': 'var(--accent-teal)',
-        'accent-magenta': 'var(--accent-magenta)',
-        'accent-violet': 'var(--accent-violet)',
-        'accent-emerald': 'var(--accent-emerald)',
-        'accent-coral': 'var(--accent-coral)',
-        'accent-indigo': 'var(--accent-indigo)',
+        // Vibrant Gradient Palette
+        'brand-cyan': 'var(--color-cyan)',
+        'brand-pink': 'var(--color-pink)',
+        'brand-orange': 'var(--color-orange)',
+        'brand-violet': 'var(--color-violet)',
+        'brand-blue': 'var(--color-blue)',
+
+        // Legacy mappings to new vibrant palette
+        'primary-saffron': 'var(--color-orange)',
+        'primary-green': 'var(--color-cyan)',
+        'primary-blue': 'var(--color-blue)',
+        'accent-gold': 'var(--color-orange)',
+        'accent-copper': 'var(--color-pink)',
+        'accent-teal': 'var(--color-cyan)',
+        'accent-magenta': 'var(--color-pink)',
+        'accent-violet': 'var(--color-violet)',
+        'accent-emerald': 'var(--color-cyan)',
+        'accent-coral': 'var(--color-orange)',
+        'accent-indigo': 'var(--color-violet)',
         
         // Background colors
         'bg-primary': 'var(--bg-primary)',

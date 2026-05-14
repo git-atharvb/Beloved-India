@@ -14,8 +14,11 @@ const containerVariants = {
 
 export default function FeaturedDestinations() {
  return (
- <section className="section-padding vibrant-bg">
- <div className="container-width">
+ <section className="section-padding bg-background relative overflow-hidden">
+ <div className="absolute top-[20%] right-[-5%] w-[30%] h-[30%] rounded-full bg-brand-cyan bg-opacity-10 blur-[120px] pointer-events-none" />
+ <div className="absolute bottom-[10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-brand-violet bg-opacity-10 blur-[150px] pointer-events-none" />
+ 
+ <div className="container-width relative z-10">
  {/* Section Header */}
  <motion.div
  className="text-center mb-12"
@@ -24,10 +27,10 @@ export default function FeaturedDestinations() {
  viewport={{ once: true, amount: 0.5 }}
  transition={{ duration: 0.6, ease: 'easeOut' }}
  >
- <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary-saffron mb-4">
+ <h2 className="text-4xl md:text-5xl font-heading font-bold gradient-text-brand mb-4">
  Featured Destinations
  </h2>
- <p className="text-lg md:text-xl font-body text-neutral-600 max-w-3xl mx-auto">
+ <p className="text-lg md:text-xl font-body text-fg-secondary max-w-3xl mx-auto">
  Explore India's most iconic and breathtaking locations.
  </p>
  </motion.div>
@@ -49,11 +52,7 @@ export default function FeaturedDestinations() {
  <div className="text-center mt-12">
  <Link to="/tourism">
  <motion.button
- className="px-8 py-3 rounded-full bg-gradient-to-r from-primary-saffron to-accent-gold text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
- whileHover={{
- scale: 1.05,
- boxShadow: '0px 0px 16px rgba(255, 153, 51, 0.4)',
- }}
+ className="px-8 py-4 rounded-xl shiny-button font-semibold text-lg"
  whileTap={{ scale: 0.95 }}
  >
  View All Destinations
