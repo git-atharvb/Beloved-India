@@ -12,7 +12,7 @@ export default function MainLayout() {
       <ScrollToTop />
       <Navbar />
       <main className="flex-grow vibrant-bg pt-24">
-        <div className="container-width section-padding">
+        <div className={location.pathname === '/' ? '' : 'container-width section-padding'}>
           <AnimatePresence mode="wait">
             <motion.div
               key={location.pathname}

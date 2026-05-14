@@ -6,53 +6,53 @@ import CultureGrid from '@/components/culture/CultureGrid';
 import CultureModal from '@/components/culture/CultureModal';
 
 export default function Culture() {
-  const [selectedCategory, setSelectedCategory] = useState('');
-  const [selectedItem, setSelectedItem] = useState<CulturalItem | null>(null);
+ const [selectedCategory, setSelectedCategory] = useState('');
+ const [selectedItem, setSelectedItem] = useState<CulturalItem | null>(null);
 
-  const availableCategories = useMemo(() => {
-    const categories = new Set(culturalItems.map((item) => item.category));
-    return Array.from(categories).sort();
-  }, []);
+ const availableCategories = useMemo(() => {
+ const categories = new Set(culturalItems.map((item) => item.category));
+ return Array.from(categories).sort();
+ }, []);
 
-  const filteredItems = useMemo(() => {
-    if (!selectedCategory) {
-      return culturalItems;
-    }
-    return culturalItems.filter((item) => item.category === selectedCategory);
-  }, [selectedCategory]);
+ const filteredItems = useMemo(() => {
+ if (!selectedCategory) {
+ return culturalItems;
+ }
+ return culturalItems.filter((item) => item.category === selectedCategory);
+ }, [selectedCategory]);
 
-  const handleCardClick = (item: CulturalItem) => {
-    setSelectedItem(item);
-  };
+ const handleCardClick = (item: CulturalItem) => {
+ setSelectedItem(item);
+ };
 
-  const handleCloseModal = () => {
-    setSelectedItem(null);
-  };
+ const handleCloseModal = () => {
+ setSelectedItem(null);
+ };
 
-  return (
-    <>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="py-8 sm:py-12 lg:py-16" // MainLayout already provides max-width and horizontal padding
-      >
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-neutral-800 dark:text-neutral-50 mb-4">
-            Culture of India
-          </h1>
-          <p className="text-lg md:text-xl font-body text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-            Experience the traditions, festivals, and art forms that define India.
-          </p>
-        </div>
+ return (
+ <>
+ <motion.div
+ initial={{ opacity: 0, y: 20 }}
+ animate={{ opacity: 1, y: 0 }}
+ className="pt-2 pb-8 sm:pt-4 sm:pb-12 lg:pt-4 lg:pb-16" // MainLayout already provides max-width and horizontal padding
+ >
+ <div className="text-center mb-12">
+ <h1 className="text-4xl md:text-5xl font-heading font-bold text-neutral-800 mb-4">
+ Culture of India
+ </h1>
+ <p className="text-lg md:text-xl font-body text-neutral-600 max-w-3xl mx-auto">
+ Experience the traditions, festivals, and art forms that define India.
+ </p>
+ </div>
 
-        <div className="flex justify-center mb-12">
-          <CultureFilter categories={availableCategories} onFilter={setSelectedCategory} selectedCategory={selectedCategory} />
-        </div>
+ <div className="flex justify-center mb-12">
+ <CultureFilter categories={availableCategories} onFilter={setSelectedCategory} selectedCategory={selectedCategory} />
+ </div>
 
-        <CultureGrid items={filteredItems} onCardClick={handleCardClick} />
-      </motion.div>
+ <CultureGrid items={filteredItems} onCardClick={handleCardClick} />
+ </motion.div>
 
-      <CultureModal item={selectedItem} onClose={handleCloseModal} />
-    </>
-  );
+ <CultureModal item={selectedItem} onClose={handleCloseModal} />
+ </>
+ );
 }

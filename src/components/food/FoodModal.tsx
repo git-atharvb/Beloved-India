@@ -3,82 +3,82 @@ import { X } from 'lucide-react';
 import { Food } from '@/data/foods';
 
 interface FoodModalProps {
-  food: Food | null;
-  onClose: () => void;
+ food: Food | null;
+ onClose: () => void;
 }
 
 const backdropVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 },
+ hidden: { opacity: 0 },
+ visible: { opacity: 1 },
 };
 
 const modalVariants = {
-  hidden: { opacity: 0, y: '-100vh' },
-  visible: {
-    opacity: 1,
-    y: '0',
-    transition: { delay: 0.1, duration: 0.3, type: 'spring', damping: 25, stiffness: 500 },
-  },
-  exit: { opacity: 0, y: '100vh', transition: { duration: 0.2 } },
+ hidden: { opacity: 0, y: '-100vh' },
+ visible: {
+ opacity: 1,
+ y: '0',
+ transition: { delay: 0.1, duration: 0.3, type: 'spring', damping: 25, stiffness: 500 },
+ },
+ exit: { opacity: 0, y: '100vh', transition: { duration: 0.2 } },
 };
 
 export default function FoodModal({ food, onClose }: FoodModalProps) {
-  if (!food) return null;
+ if (!food) return null;
 
-  return (
-    <AnimatePresence>
-      {food && (
-        <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
-          variants={backdropVariants}
-          initial="hidden"
-          animate="visible"
-          exit="hidden"
-        >
-          {/* Backdrop */}
-          <div
-            className="absolute inset-0 bg-black/50 backdrop-blur-sm"
-            onClick={onClose}
-          />
+ return (
+ <AnimatePresence>
+ {food && (
+ <motion.div
+ className="fixed inset-0 z-50 flex items-center justify-center p-4"
+ variants={backdropVariants}
+ initial="hidden"
+ animate="visible"
+ exit="hidden"
+ >
+ {/* Backdrop */}
+ <div
+ className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+ onClick={onClose}
+ />
 
-          {/* Modal Content */}
-          <motion.div
-            className="relative bg-white dark:bg-neutral-900 rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto
-                       border border-neutral-200 dark:border-neutral-700"
-            variants={modalVariants}
-          >
-            <button
-              onClick={onClose}
-              className="absolute top-4 right-4 p-2 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300
-                         hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors duration-200 z-10"
-              aria-label="Close modal"
-            >
-              <X className="w-5 h-5" />
-            </button>
+ {/* Modal Content */}
+ <motion.div
+ className="relative bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto
+ border border-neutral-200 "
+ variants={modalVariants}
+ >
+ <button
+ onClick={onClose}
+ className="absolute top-4 right-4 p-2 rounded-full bg-neutral-100 text-neutral-600 
+ hover:bg-neutral-200 :bg-neutral-700 transition-colors duration-200 z-10"
+ aria-label="Close modal"
+ >
+ <X className="w-5 h-5" />
+ </button>
 
-            <div className={`w-full h-64 rounded-t-lg ${food.image} bg-cover bg-center`} />
+ <div className={`w-full h-64 rounded-t-lg ${food.image} bg-cover bg-center`} />
 
-            <div className="p-6">
-              <h2 className="text-3xl font-heading font-bold text-neutral-800 dark:text-neutral-50 mb-2">
-                {food.name}
-              </h2>
-              <p className="text-lg font-body text-primary-600 dark:text-primary-400 mb-4">
-                Region: {food.region}
-              </p>
-              <p className="text-neutral-700 dark:text-neutral-200 mb-4">{food.description}</p>
+ <div className="p-6">
+ <h2 className="text-3xl font-heading font-bold text-neutral-800 mb-2">
+ {food.name}
+ </h2>
+ <p className="text-lg font-body text-primary-600 mb-4">
+ Region: {food.region}
+ </p>
+ <p className="text-neutral-700 mb-4">{food.description}</p>
 
-              <h3 className="text-xl font-heading font-semibold text-neutral-800 dark:text-neutral-50 mb-2">
-                Ingredients:
-              </h3>
-              <ul className="list-disc list-inside text-neutral-600 dark:text-neutral-300">
-                {food.ingredients.map((ingredient, i) => (
-                  <li key={i}>{ingredient}</li>
-                ))}
-              </ul>
-            </div>
-          </motion.div>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
+ <h3 className="text-xl font-heading font-semibold text-neutral-800 mb-2">
+ Ingredients:
+ </h3>
+ <ul className="list-disc list-inside text-neutral-600 ">
+ {food.ingredients.map((ingredient, i) => (
+ <li key={i}>{ingredient}</li>
+ ))}
+ </ul>
+ </div>
+ </motion.div>
+ </motion.div>
+ )}
+ </AnimatePresence>
+ );
 }

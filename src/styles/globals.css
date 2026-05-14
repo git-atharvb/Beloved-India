@@ -152,6 +152,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    padding-bottom: 0.1em;
   }
 
   p {
@@ -713,8 +714,8 @@
   }
 
   .section-padding {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
   }
 
   /* ===== BACKGROUND UTILITIES ===== */
