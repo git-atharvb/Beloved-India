@@ -59,7 +59,7 @@ export default function Tourism() {
  } else if (!searchTerm && sortOrder === 'none') {
  // Pseudo-random deterministic shuffle for "All States" default view
  // This spreads out the states so they aren't clumped together
- filtered.sort((a, b) => ((a.id * 97) % 360) - ((b.id * 97) % 360));
+ filtered.sort((a, b) => ((a.id * 97) % 720) - ((b.id * 97) % 720));
  }
 
  if (sortOrder === 'rating-desc') {
@@ -76,17 +76,14 @@ export default function Tourism() {
  setCurrentPage(1);
  }, [searchTerm, selectedState, sortOrder]);
 
- const itemsPerPage = 20;
- const showPagination = !selectedState && filteredDestinations.length > itemsPerPage;
+ const itemsPerPage = 10;
+ const showPagination = filteredDestinations.length > itemsPerPage;
  const totalPages = Math.ceil(filteredDestinations.length / itemsPerPage);
 
  const displayedDestinations = useMemo(() => {
- if (showPagination) {
  const startIndex = (currentPage - 1) * itemsPerPage;
  return filteredDestinations.slice(startIndex, startIndex + itemsPerPage);
- }
- return filteredDestinations;
- }, [filteredDestinations, currentPage, showPagination]);
+ }, [filteredDestinations, currentPage]);
 
  return (
  <motion.div
