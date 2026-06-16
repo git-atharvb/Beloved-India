@@ -29,7 +29,7 @@ const cardVariants = {
 export default function FoodCard({ food, index, onClick }: FoodCardProps) {
  return (
  <motion.div
- className="card-surface overflow-hidden flex flex-col group cursor-pointer"
+ className="card overflow-hidden flex flex-col group cursor-pointer"
  variants={cardVariants}
  initial="hidden"
  whileInView="visible"

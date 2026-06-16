@@ -1,83 +1,28 @@
-import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import clsx from 'clsx';
+import { FC } from 'react';
 
 interface TourismFilterProps {
- states: string[];
- onFilter: (state: string) => void;
- selectedState: string;
+  states: string[];
+  onFilter: (state: string) => void;
+  selectedState: string;
 }
 
-export default function TourismFilter({ states, onFilter, selectedState }: TourismFilterProps) {
- const [isOpen, setIsOpen] = useState(false);
+const TourismFilter: FC<TourismFilterProps> = ({ states, onFilter, selectedState }) => {
+  return (
+    <div className="w-full md:w-56 flex-shrink-0">
+      <select
+        value={selectedState}
+        onChange={(e) => onFilter(e.target.value)}
+        className="w-full bg-white border border-neutral-200 text-neutral-800 text-sm rounded-xl focus:outline-none focus:ring-1 focus:ring-brand-saffron focus:border-brand-saffron block py-3 px-4 shadow-sm transition-all cursor-pointer dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-100"
+      >
+        <option value="">Filter: All States</option>
+        {states.map((state) => (
+          <option key={state} value={state}>
+            {state}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+};
 
- const handleSelect = (state: string) => {
- onFilter(state);
- setIsOpen(false);
- };
-
- const dropdownVariants = {
- hidden: { opacity: 0, y: -10, scaleY: 0.95 },
- visible: { opacity: 1, y: 0, scaleY: 1, transition: { duration: 0.2, ease: 'easeOut' } },
- exit: { opacity: 0, y: -10, scaleY: 0.95, transition: { duration: 0.15, ease: 'easeIn' } },
- };
-
- return (
- <motion.div
- initial={{ opacity: 0, y: -20 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.5, delay: 0.3 }}
- className="relative w-full max-w-xs mx-auto mb-8"
- >
- <button
- type="button"
- className="flex justify-between items-center w-full px-4 py-2 rounded-full shadow-md
- bg-white text-neutral-800 
- border border-neutral-200 
- focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent
- transition-all duration-200"
- onClick={() => setIsOpen(!isOpen)}
- aria-haspopup="true"
- aria-expanded={isOpen}
- >
- <span>{selectedState === '' ? 'Filter by State' : selectedState}</span>
- <ChevronDown className={clsx('w-5 h-5 transition-transform duration-200', { 'rotate-180': isOpen })} />
- </button>
-
- <AnimatePresence>
- {isOpen && (
- <motion.ul
- variants={dropdownVariants}
- initial="hidden"
- animate="visible"
- exit="exit"
- className="absolute z-20 w-full mt-2 rounded-lg shadow-lg
- bg-white border border-neutral-200 
- max-h-60 overflow-y-auto"
- role="menu"
- aria-orientation="vertical"
- >
- <li
- className="px-4 py-2 text-neutral-700 hover:bg-neutral-100 :bg-neutral-700 cursor-pointer rounded-t-lg"
- onClick={() => handleSelect('')}
- role="menuitem"
- >
- All States
- </li>
- {states.map((state) => (
- <li
- key={state}
- className="px-4 py-2 text-neutral-700 hover:bg-neutral-100 :bg-neutral-700 cursor-pointer"
- onClick={() => handleSelect(state)}
- role="menuitem"
- >
- {state}
- </li>
- ))}
- </motion.ul>
- )}
- </AnimatePresence>
- </motion.div>
- );
-}
+export default TourismFilter;

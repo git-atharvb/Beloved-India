@@ -26,32 +26,34 @@ export default {
         muted: 'var(--bg-tertiary)',
         hover: 'var(--surface-hover)',
         
-        // Vibrant Gradient Palette
-        'brand-cyan': 'var(--color-cyan)',
-        'brand-pink': 'var(--color-pink)',
-        'brand-orange': 'var(--color-orange)',
-        'brand-violet': 'var(--color-violet)',
+        // Vibrant Palette
+        'brand-saffron': 'var(--color-saffron)',
+        'brand-emerald': 'var(--color-emerald)',
         'brand-blue': 'var(--color-blue)',
+        'brand-gold': 'var(--color-gold)',
+        'brand-pink': 'var(--color-pink)',
+        'brand-violet': 'var(--color-violet)',
+        'brand-crimson': 'var(--color-crimson)',
+        'brand-skyblue': 'var(--color-skyblue)',
+        'brand-yellow': 'var(--color-yellow)',
+        'brand-green': 'var(--color-green)',
 
-        // Legacy mappings to new vibrant palette
-        'primary-saffron': 'var(--color-orange)',
-        'primary-green': 'var(--color-cyan)',
+        // Legacy Mappings
+        'primary-saffron': 'var(--color-saffron)',
+        'primary-green': 'var(--color-emerald)',
         'primary-blue': 'var(--color-blue)',
-        'accent-gold': 'var(--color-orange)',
-        'accent-copper': 'var(--color-pink)',
-        'accent-teal': 'var(--color-cyan)',
+        'accent-gold': 'var(--color-gold)',
+        'accent-copper': 'var(--color-saffron)',
+        'accent-teal': 'var(--color-blue)',
         'accent-magenta': 'var(--color-pink)',
         'accent-violet': 'var(--color-violet)',
-        'accent-emerald': 'var(--color-cyan)',
-        'accent-coral': 'var(--color-orange)',
+        'accent-emerald': 'var(--color-emerald)',
+        'accent-coral': 'var(--color-saffron)',
         'accent-indigo': 'var(--color-violet)',
-        
-        // Background colors
+
         'bg-primary': 'var(--bg-primary)',
         'bg-secondary': 'var(--bg-secondary)',
         'bg-tertiary': 'var(--bg-tertiary)',
-        
-        // Foreground colors
         'fg-primary': 'var(--fg-primary)',
         'fg-secondary': 'var(--fg-secondary)',
         'fg-muted': 'var(--fg-muted)',
@@ -61,16 +63,44 @@ export default {
         'premium-md': '0 12px 32px -4px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.04)',
         'premium-glass': '0 8px 32px 0 rgba(0, 0, 0, 0.08)',
         'glow-saffron': '0 0 20px rgba(255, 153, 51, 0.4)',
+        'glow-emerald': '0 0 20px rgba(16, 185, 129, 0.4)',
+        'neo-glow': '0 0 20px var(--neo-glow-color)',
       },
       backgroundImage: {
         'glass-gradient': 'linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.02) 100%)',
         'glass-gradient-dark': 'linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%)',
+        'mesh-saffron': 'radial-gradient(at 0% 0%, hsla(28,100%,74%,1) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(340,100%,76%,1) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(22,100%,77%,1) 0, transparent 50%)',
       },
       fontFamily: {
-        heading: ['Poppins', 'sans-serif'],
+        heading: ['Outfit', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
         decorative: ['Playfair Display', 'serif'],
       },
+      animation: {
+        'shimmer': 'shimmer 3s ease-in-out infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'pulse-glow': 'pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'blob-spin': 'blobSpin 20s linear infinite',
+      },
+      keyframes: {
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        pulseGlow: {
+          '0%, 100%': { opacity: 1, transform: 'scale(1)' },
+          '50%': { opacity: .7, transform: 'scale(1.05)' },
+        },
+        blobSpin: {
+          '0%': { transform: 'rotate(0deg) scale(1)' },
+          '50%': { transform: 'rotate(180deg) scale(1.1)' },
+          '100%': { transform: 'rotate(360deg) scale(1)' },
+        }
+      }
     },
   },
   plugins: [],

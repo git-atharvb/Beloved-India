@@ -43,7 +43,7 @@ export default function PeopleModal({ person, onClose }: PeopleModalProps) {
 
  {/* Modal Content */}
  <motion.div
- className="relative bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto
+ className="relative bg-surface rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto
  border border-neutral-200 "
  variants={modalVariants}
  >
@@ -59,13 +59,13 @@ export default function PeopleModal({ person, onClose }: PeopleModalProps) {
  <div className={`w-full h-64 rounded-t-lg ${person.image} bg-cover bg-center`} />
 
  <div className="p-6">
- <h2 className="text-3xl font-heading font-bold text-neutral-800 mb-2">
+ <h2 className="text-3xl font-heading font-bold text-primary mb-2">
  {person.name}
  </h2>
  <p className="text-lg font-body text-primary-600 mb-2">
  {person.profession} &bull; {person.era}
  </p>
- <p className="text-neutral-700 ">{person.description}</p>
+ <p className="text-secondary ">{person.description}</p>
  </div>
  </motion.div>
  </motion.div>

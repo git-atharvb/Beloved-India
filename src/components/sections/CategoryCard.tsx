@@ -41,7 +41,7 @@ const iconVariants = {
 export default function CategoryCard({ icon: Icon, title, description, path, index }: CategoryCardProps) {
  return (
  <motion.div
- className="card-surface overflow-hidden flex flex-col group cursor-pointer"
+ className="card overflow-hidden flex flex-col group cursor-pointer"
  variants={cardVariants}
  initial="hidden"
  animate="visible"

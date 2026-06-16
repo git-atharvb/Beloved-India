@@ -13,6 +13,10 @@ const containerVariants = {
 };
 
 export default function FeaturedDestinations() {
+  const top8Destinations = [...destinations]
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, 8);
+
  return (
  <section className="section-padding bg-background relative overflow-hidden">
  <div className="absolute top-[20%] right-[-5%] w-[30%] h-[30%] rounded-full bg-brand-cyan bg-opacity-10 blur-[120px] pointer-events-none" />
@@ -43,7 +47,7 @@ export default function FeaturedDestinations() {
  whileInView="visible"
  viewport={{ once: true, amount: 0.2 }}
  >
- {destinations.map((destination, index) => (
+ {top8Destinations.map((destination, index) => (
  <DestinationCard key={destination.id} destination={destination} index={index} />
  ))}
  </motion.div>

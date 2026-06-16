@@ -43,7 +43,7 @@ export default function FoodModal({ food, onClose }: FoodModalProps) {
 
  {/* Modal Content */}
  <motion.div
- className="relative bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto
+ className="relative bg-surface rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto
  border border-neutral-200 "
  variants={modalVariants}
  >
@@ -59,18 +59,18 @@ export default function FoodModal({ food, onClose }: FoodModalProps) {
  <div className={`w-full h-64 rounded-t-lg ${food.image} bg-cover bg-center`} />
 
  <div className="p-6">
- <h2 className="text-3xl font-heading font-bold text-neutral-800 mb-2">
+ <h2 className="text-3xl font-heading font-bold text-primary mb-2">
  {food.name}
  </h2>
  <p className="text-lg font-body text-primary-600 mb-4">
  Region: {food.region}
  </p>
- <p className="text-neutral-700 mb-4">{food.description}</p>
+ <p className="text-secondary mb-4">{food.description}</p>
 
- <h3 className="text-xl font-heading font-semibold text-neutral-800 mb-2">
+ <h3 className="text-xl font-heading font-semibold text-primary mb-2">
  Ingredients:
  </h3>
- <ul className="list-disc list-inside text-neutral-600 ">
+ <ul className="list-disc list-inside text-secondary ">
  {food.ingredients.map((ingredient, i) => (
  <li key={i}>{ingredient}</li>
  ))}

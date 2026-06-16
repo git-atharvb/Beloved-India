@@ -33,7 +33,7 @@ export default function CultureFilter({ categories, onFilter, selectedCategory }
  <button
  type="button"
  className="flex justify-between items-center w-full px-4 py-2 rounded-full shadow-md
- bg-white text-neutral-800 
+ bg-surface text-primary 
  border border-neutral-200 
  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent
  transition-all duration-200"
@@ -53,13 +53,13 @@ export default function CultureFilter({ categories, onFilter, selectedCategory }
  animate="visible"
  exit="exit"
  className="absolute z-20 w-full mt-2 rounded-lg shadow-lg
- bg-white border border-neutral-200 
+ bg-surface border border-neutral-200 
  max-h-60 overflow-y-auto"
  role="menu"
  aria-orientation="vertical"
  >
  <li
- className="px-4 py-2 text-neutral-700 hover:bg-neutral-100 :bg-neutral-700 cursor-pointer rounded-t-lg"
+ className="px-4 py-2 text-secondary hover:bg-surface :bg-neutral-700 cursor-pointer rounded-t-lg"
  onClick={() => handleSelect('')}
  role="menuitem"
  >
@@ -68,7 +68,7 @@ export default function CultureFilter({ categories, onFilter, selectedCategory }
  {categories.map((category) => (
  <li
  key={category}
- className="px-4 py-2 text-neutral-700 hover:bg-neutral-100 :bg-neutral-700 cursor-pointer"
+ className="px-4 py-2 text-secondary hover:bg-surface :bg-neutral-700 cursor-pointer"
  onClick={() => handleSelect(category)}
  role="menuitem"
  >

@@ -43,7 +43,7 @@ export default function WildlifeModal({ item, onClose }: WildlifeModalProps) {
 
  {/* Modal Content */}
  <motion.div
- className="relative bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto
+ className="relative bg-surface rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto
  border border-neutral-200 "
  variants={modalVariants}
  >
@@ -59,13 +59,13 @@ export default function WildlifeModal({ item, onClose }: WildlifeModalProps) {
  <div className={`w-full h-64 rounded-t-lg ${item.image} bg-cover bg-center`} />
 
  <div className="p-6">
- <h2 className="text-3xl font-heading font-bold text-neutral-800 mb-2">
+ <h2 className="text-3xl font-heading font-bold text-primary mb-2">
  {item.name}
  </h2>
  <p className="text-lg font-body text-primary-600 mb-2">
  {item.type} &bull; {item.habitat}
  </p>
- <p className="text-neutral-700 ">{item.description}</p>
+ <p className="text-secondary ">{item.description}</p>
  </div>
  </motion.div>
  </motion.div>

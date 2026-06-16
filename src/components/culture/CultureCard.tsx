@@ -28,8 +28,8 @@ const cardVariants = {
 
 export default function CultureCard({ item, index, onClick }: CultureCardProps) {
  return (
- <motion.div
- className="card-surface overflow-hidden flex flex-col group cursor-pointer"
+<motion.div
+ className="card overflow-hidden flex flex-col group cursor-pointer"
  variants={cardVariants}
  initial="hidden"
  whileInView="visible"
@@ -48,11 +48,11 @@ export default function CultureCard({ item, index, onClick }: CultureCardProps) 
  </div>
  </div>
  <div className="p-6 flex-grow flex flex-col">
- <h3 className="font-heading font-semibold text-xl text-neutral-800 mb-1">
+<h3 className="font-heading font-semibold text-xl text-fg-primary mb-1">
  {item.title}
  </h3>
- <p className="text-sm text-primary-600 mb-1">{item.category}</p>
- <p className="text-sm text-neutral-500 mt-auto">{item.region}</p>
+<p className="text-sm text-primary-saffron mb-1">{item.category}</p>
+<p className="text-sm text-fg-secondary mt-auto">{item.region}</p>
  </div>
  </motion.div>
  );

@@ -9,10 +9,10 @@ const imageModules = import.meta.glob('@/assets/images/HomeImages/*.{png,jpg,jpe
 const images = Object.values(imageModules) as string[];
 
 const features = [
-  { title: 'Ancient History', description: 'Timeless monuments and stories.', icon: Landmark },
-  { title: 'Local Cuisine', description: 'Regional flavors from every state.', icon: Utensils },
-  { title: 'Cultural Trails', description: 'Festivals, art, and living traditions.', icon: BookOpenText },
-  { title: 'Hidden Routes', description: 'Curated travel paths beyond the ordinary.', icon: Compass },
+  { title: 'Ancient History', description: 'Timeless monuments and stories.', icon: Landmark, color: 'var(--color-saffron)' },
+  { title: 'Local Cuisine', description: 'Regional flavors from every state.', icon: Utensils, color: 'var(--color-green)' },
+  { title: 'Cultural Trails', description: 'Festivals, art, and living traditions.', icon: BookOpenText, color: 'var(--color-violet)' },
+  { title: 'Hidden Routes', description: 'Curated travel paths beyond the ordinary.', icon: Compass, color: 'var(--color-skyblue)' },
 ];
 
 const textVariants = {
@@ -33,10 +33,12 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden min-h-[calc(100vh-5rem)] flex flex-col justify-start bg-background">
-      {/* Dynamic Performant Background Orbs */}
-      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-cyan-600/20 dark:bg-cyan-400/20 blur-[120px] pointer-events-none transform translate-z-0" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-pink-600/10 dark:bg-pink-400/10 blur-[150px] pointer-events-none transform translate-z-0" />
-      <div className="absolute top-[40%] left-[60%] w-[30%] h-[30%] rounded-full bg-violet-600/10 dark:bg-violet-400/10 blur-[100px] pointer-events-none transform translate-z-0" />
+      {/* Dynamic Performant Background Orbs - Holi Palette */}
+      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-brand-skyblue/20 dark:bg-brand-skyblue/20 blur-[120px] pointer-events-none transform translate-z-0 animate-blob-spin" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-brand-yellow/15 dark:bg-brand-yellow/15 blur-[150px] pointer-events-none transform translate-z-0 animate-blob-spin" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-[40%] left-[60%] w-[30%] h-[30%] rounded-full bg-brand-crimson/15 dark:bg-brand-crimson/15 blur-[100px] pointer-events-none transform translate-z-0 animate-blob-spin" style={{ animationDelay: '4s' }} />
+      <div className="absolute top-[20%] left-[20%] w-[25%] h-[25%] rounded-full bg-brand-violet/15 dark:bg-brand-violet/15 blur-[100px] pointer-events-none transform translate-z-0 animate-blob-spin" style={{ animationDelay: '1s' }} />
+      <div className="absolute bottom-[20%] left-[40%] w-[35%] h-[35%] rounded-full bg-brand-green/15 dark:bg-brand-green/15 blur-[120px] pointer-events-none transform translate-z-0 animate-blob-spin" style={{ animationDelay: '3s' }} />
 
       {/* Fade out bottom to blend with next section */}
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none" />
@@ -46,19 +48,19 @@ export default function Hero() {
           
           {/* Text Content */}
           <motion.div className="space-y-8" initial="hidden" animate="visible" variants={textVariants}>
-            <span className="inline-block px-4 py-1.5 rounded-full bg-cyan-600/10 dark:bg-cyan-400/10 border border-cyan-600/20 dark:border-cyan-400/20 text-sm font-medium text-brand-cyan backdrop-blur-md">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-brand-saffron/10 dark:bg-brand-saffron/10 border border-brand-saffron/20 dark:border-brand-saffron/20 text-sm font-medium text-brand-saffron backdrop-blur-md">
               Discover India's timeless heritage and vibrant culture
             </span>
             <div className="space-y-6">
               <h1 className="text-5xl md:text-6xl xl:text-7xl font-heading font-extrabold tracking-tighter text-foreground leading-[1.1]">
-                Discover the <span className="gradient-text-brand">Soul of India</span> with immersive travel stories.
+                Discover the <span className="gradient-text-holi">Soul of India</span> with immersive travel stories.
               </h1>
               <p className="max-w-2xl text-lg md:text-xl leading-relaxed text-fg-secondary">
                 Explore unforgettable cultural journeys, stunning landscapes, and modern travel experiences designed to inspire every explorer.
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center pt-4">
-              <Link to="/explore" className="inline-flex w-full items-center justify-center rounded-xl shiny-button px-8 py-4 text-base sm:w-auto">
+              <Link to="/explore" className="inline-flex w-full items-center justify-center rounded-xl shiny-button-multi px-8 py-4 text-base sm:w-auto">
                 Start Exploring
               </Link>
               <Link to="/tourism" className="inline-flex w-full items-center justify-center rounded-xl bg-surface border border-border hover:bg-hover px-8 py-4 text-base font-semibold text-foreground transition-all duration-300 sm:w-auto shadow-sm hover:shadow-md hover:-translate-y-0.5">
@@ -108,7 +110,10 @@ export default function Hero() {
               className="h-full group-hover-target"
             >
               <GlassCard interactive className="p-6 h-full flex flex-col">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-pink bg-opacity-10 text-brand-pink mb-6">
+                <div 
+                  className="flex h-12 w-12 items-center justify-center rounded-2xl mb-6"
+                  style={{ backgroundColor: `color-mix(in srgb, ${feature.color} 15%, transparent)`, color: feature.color }}
+                >
                   <feature.icon size={24} strokeWidth={2} />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-2">{feature.title}</h3>

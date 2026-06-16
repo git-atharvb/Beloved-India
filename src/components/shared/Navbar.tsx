@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { Sun, Moon } from 'lucide-react';
 import clsx from 'clsx';
 import { AnimatePresence, motion } from 'framer-motion';
 import belovedIndiaLogo from '@/assets/images/beloved_india_logo.png';
+import { useTheme } from '@/hooks/useTheme';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -32,6 +34,9 @@ export default function Navbar() {
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
+  // Theme toggle
+  const { dark, toggle } = useTheme();
+
   const mobileMenuVariants = {
     hidden: { opacity: 0, y: -20, scale: 0.95 },
     visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.2, ease: 'easeOut' } },
@@ -43,7 +48,7 @@ export default function Navbar() {
       <motion.header
         className={clsx(
           "w-full max-w-7xl pointer-events-auto rounded-3xl border transition-all duration-300",
-          "backdrop-blur-2xl bg-white/70 dark:bg-[#0f0f0f]/70 border-border shadow-premium-glass"
+          "backdrop-blur-2xl bg-white/70 dark:bg-zinc-950/70 border-border shadow-premium-glass"
         )}
         animate={{
           scale: isShrunk ? 0.98 : 1,
@@ -53,15 +58,15 @@ export default function Navbar() {
       >
         <div className="w-full flex items-center justify-between gap-6 px-6 transition-all duration-300 h-20 py-3">
           <NavLink to="/" onClick={closeMobileMenu} className="flex items-center gap-4 group">
-            <div className="flex items-center justify-center rounded-2xl bg-white/10 border border-white/20 shadow-sm h-12 w-12 transition-transform duration-300 group-hover:scale-105">
-              <img src={belovedIndiaLogo} alt="Beloved India Logo" className="w-auto h-8" />
+            <div className="flex items-center justify-center rounded-2xl bg-white overflow-hidden shadow-sm h-12 w-12 shrink-0 transition-transform duration-300 group-hover:scale-105">
+              <img src={belovedIndiaLogo} alt="Beloved India Logo" className="w-full h-full object-cover" />
             </div>
             <motion.div
               animate={{ opacity: isShrunk ? 0 : 1, width: isShrunk ? 0 : 'auto', overflow: 'hidden' }}
               transition={{ duration: 0.3 }}
               className="whitespace-nowrap"
             >
-              <p className="text-sm font-bold tracking-[0.2em] uppercase gradient-text-brand">Beloved India</p>
+              <p className="text-sm font-bold tracking-[0.2em] uppercase gradient-text-holi">Beloved India</p>
               <p className="text-xs text-fg-muted font-medium">Travel · Culture · Heritage</p>
             </motion.div>
           </NavLink>
@@ -73,21 +78,41 @@ export default function Navbar() {
                 to={link.path}
                 className={({ isActive }) =>
                   clsx(
-                    'relative px-4 py-2 rounded-xl transition-colors duration-200 hover:text-brand-cyan hover:bg-cyan-600/5 dark:hover:bg-cyan-400/5 text-foreground',
-                    isActive && 'text-brand-cyan font-semibold bg-cyan-600/10 dark:bg-cyan-400/10'
+                    'relative px-4 py-2 rounded-xl transition-colors duration-200 text-foreground',
+                    isActive ? 'text-brand-saffron font-semibold' : 'hover:text-brand-saffron hover:bg-brand-saffron/5'
                   )
                 }
               >
-                {link.name}
+                {({ isActive }) => (
+                  <>
+                    <span className="relative z-10">{link.name}</span>
+                    {isActive && (
+                      <motion.div
+                        layoutId="navbar-active-pill"
+                        className="absolute inset-0 bg-brand-saffron/10 dark:bg-brand-saffron/15 rounded-xl z-0"
+                        transition={{ type: "spring", stiffness: 350, damping: 30 }}
+                      />
+                    )}
+                  </>
+                )}
               </NavLink>
             ))}
           </nav>
 
           <div className="flex items-center gap-4">
+            {/* Theme toggle button */}
+            <button
+              type="button"
+              onClick={toggle}
+              className="inline-flex items-center justify-center rounded-xl bg-white/50 dark:bg-zinc-900/50 border border-border h-10 w-10 hover:bg-hover transition-colors duration-200 text-foreground"
+              aria-label="Toggle dark mode"
+            >
+              {dark ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+            </button>
             <button
               type="button"
               onClick={toggleMobileMenu}
-              className="inline-flex items-center justify-center rounded-xl bg-white/50 dark:bg-[#0f0f0f]/50 border border-border h-10 w-10 hover:bg-hover transition-colors duration-200 xl:hidden text-foreground"
+              className="inline-flex items-center justify-center rounded-xl bg-white/50 dark:bg-zinc-900/50 border border-border h-10 w-10 hover:bg-hover transition-colors duration-200 xl:hidden text-foreground"
               aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}

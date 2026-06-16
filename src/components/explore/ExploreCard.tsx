@@ -27,7 +27,7 @@ const cardVariants = {
 export default function ExploreCard({ theme, index }: ExploreCardProps) {
  return (
  <motion.div
- className="card-surface overflow-hidden flex flex-col group cursor-pointer"
+ className="card overflow-hidden flex flex-col group cursor-pointer"
  variants={cardVariants}
  initial="hidden"
  whileInView="visible"
