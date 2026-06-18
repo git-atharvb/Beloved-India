@@ -6,6 +6,7 @@ import { Destination } from '@/data/destinations';
 interface DestinationCardProps {
   destination: Destination;
   index: number;
+  onClick?: (destination: Destination) => void;
 }
 
 const cardVariants = {
@@ -52,7 +53,7 @@ const titleColors = [
   'text-brand-green'
 ];
 
-export default function DestinationCard({ destination, index }: DestinationCardProps) {
+export default function DestinationCard({ destination, index, onClick }: DestinationCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
@@ -75,6 +76,7 @@ export default function DestinationCard({ destination, index }: DestinationCardP
       viewport={{ once: true, amount: 0.5 }}
       whileHover="hover"
       custom={index}
+      onClick={() => onClick && onClick(destination)}
     >
  <div className="relative h-56 w-full overflow-hidden shrink-0">
         <div
@@ -97,10 +99,10 @@ export default function DestinationCard({ destination, index }: DestinationCardP
  </span>
  </div>
  </div>
- <p className="text-sm font-body color-transition flex-grow">
- {destination.description}
- </p>
- </div>
- </motion.div>
+        <p className="text-sm font-body color-transition flex-grow line-clamp-3 min-h-[60px] text-fg-secondary mt-2">
+          {destination.description}
+        </p>
+      </div>
+    </motion.div>
  );
 }

@@ -1,17 +1,22 @@
 import { useState, useMemo, useEffect } from 'react';
+import { RefreshCw } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { destinations } from '@/data/destinations';
 import TourismSearch from '../components/tourism/TourismSearch';
 import TourismFilter from '../components/tourism/TourismFilter';
 import TourismSort from '../components/tourism/TourismSort';
 import TourismCard from '@/components/tourism/TourismCard';
+import DestinationModal from '@/components/shared/DestinationModal';
+import { Destination } from '@/data/destinations';
 
 export default function Tourism() {
  const [searchTerm, setSearchTerm] = useState('');
  const [selectedState, setSelectedState] = useState('');
  const [sortOrder, setSortOrder] = useState<'none' | 'rating-asc' | 'rating-desc'>('none');
- const [currentPage, setCurrentPage] = useState(1);
- const [favoriteIds, setFavoriteIds] = useState<Set<number>>(() => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [seed, setSeed] = useState(97);
+  const [selectedDestination, setSelectedDestination] = useState<Destination | null>(null);
+  const [favoriteIds, setFavoriteIds] = useState<Set<number>>(() => {
  // Initialize favorites from localStorage
  if (typeof window !== 'undefined') {
  const savedFavorites = localStorage.getItem('favoriteDestinations');
@@ -56,11 +61,10 @@ export default function Tourism() {
 
  if (selectedState) {
  filtered = filtered.filter((d) => d.state === selectedState);
- } else if (!searchTerm && sortOrder === 'none') {
- // Pseudo-random deterministic shuffle for "All States" default view
- // This spreads out the states so they aren't clumped together
- filtered.sort((a, b) => ((a.id * 97) % 720) - ((b.id * 97) % 720));
- }
+  } else if (!searchTerm && sortOrder === 'none') {
+  // Random deterministic shuffle based on seed
+  filtered.sort((a, b) => ((a.id * seed) % 720) - ((b.id * seed) % 720));
+  }
 
  if (sortOrder === 'rating-desc') {
  filtered.sort((a, b) => b.rating - a.rating);
@@ -69,7 +73,7 @@ export default function Tourism() {
  }
 
  return filtered;
- }, [searchTerm, selectedState, sortOrder]);
+ }, [searchTerm, selectedState, sortOrder, seed]);
 
  // Reset page when filters change
  useEffect(() => {
@@ -105,11 +109,22 @@ export default function Tourism() {
  </p>
  </div>
 
- <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
- <TourismSearch onSearch={setSearchTerm} />
- <TourismFilter states={availableStates} onFilter={setSelectedState} selectedState={selectedState} />
- <TourismSort sortOrder={sortOrder} onSortChange={setSortOrder} />
- </div>
+  <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
+    <TourismSearch onSearch={setSearchTerm} />
+    <div className="flex items-center gap-2">
+      <TourismFilter states={availableStates} onFilter={setSelectedState} selectedState={selectedState} />
+      {!selectedState && !searchTerm && sortOrder === 'none' && (
+        <button
+          onClick={() => setSeed(Math.floor(Math.random() * 1000) + 1)}
+          className="p-3 rounded-xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 text-brand-saffron hover:bg-neutral-50 hover:shadow-md transition-all group"
+          title="Shuffle Destinations"
+        >
+          <RefreshCw size={20} className="group-hover:rotate-180 transition-transform duration-500" />
+        </button>
+      )}
+    </div>
+    <TourismSort sortOrder={sortOrder} onSortChange={setSortOrder} />
+  </div>
 
  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
  {displayedDestinations.length > 0 ? (
@@ -120,6 +135,7 @@ export default function Tourism() {
  index={index}
  onToggleFavorite={handleToggleFavorite}
  isFavorite={favoriteIds.has(destination.id)}
+ onClick={setSelectedDestination}
  />
  ))
  ) : (
@@ -179,6 +195,12 @@ export default function Tourism() {
  </button>
  </div>
  )}
+
+ <DestinationModal 
+   destination={selectedDestination} 
+   isOpen={!!selectedDestination} 
+   onClose={() => setSelectedDestination(null)} 
+ />
  </motion.div>
  );
 }

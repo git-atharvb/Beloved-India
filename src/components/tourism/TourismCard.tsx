@@ -9,6 +9,7 @@ interface TourismCardProps {
   index: number; // For staggered animation
   onToggleFavorite: (id: number) => void;
   isFavorite: boolean;
+  onClick?: (destination: Destination) => void;
 }
 
 const cardVariants = {
@@ -56,7 +57,7 @@ const StarRating = ({ rating }: { rating: number }) => {
   );
 };
 
-export default function TourismCard({ destination, index, onToggleFavorite, isFavorite }: TourismCardProps) {
+export default function TourismCard({ destination, index, onToggleFavorite, isFavorite, onClick }: TourismCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
@@ -84,6 +85,7 @@ export default function TourismCard({ destination, index, onToggleFavorite, isFa
       viewport={{ once: true, amount: 0.5 }}
       whileHover="hover"
       custom={index}
+      onClick={() => onClick && onClick(destination)}
     >
       <div className="relative h-56 w-full overflow-hidden shrink-0">
         <img
@@ -95,7 +97,10 @@ export default function TourismCard({ destination, index, onToggleFavorite, isFa
         />
         <motion.button
           className="absolute top-3 right-3 p-2 rounded-full bg-white/70 backdrop-blur-sm text-red-500 hover:text-red-600 :text-red-400 transition-colors duration-200"
-          onClick={() => onToggleFavorite(destination.id)}
+          onClick={(e) => {
+            e.stopPropagation();
+            onToggleFavorite(destination.id);
+          }}
           variants={heartVariants}
           animate={isFavorite ? 'toggled' : 'initial'}
           aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
@@ -114,7 +119,7 @@ export default function TourismCard({ destination, index, onToggleFavorite, isFa
             <span className="text-sm font-semibold text-neutral-700 ">{destination.rating.toFixed(1)}</span>
           </div>
         </div>
-        <p className="text-sm font-body text-neutral-600 flex-grow">{destination.description}</p>
+        <p className="text-sm font-body text-neutral-600 flex-grow line-clamp-3 min-h-[60px]">{destination.description}</p>
       </div>
     </motion.div>
   );

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { RefreshCw } from 'lucide-react';
 import { destinations, Destination } from '@/data/destinations';
 import DestinationCard from './DestinationCard';
+import DestinationModal from '../shared/DestinationModal';
 
 const containerVariants = {
   hidden: {},
@@ -17,6 +18,7 @@ const containerVariants = {
 export default function FeaturedDestinations() {
   const [featured, setFeatured] = useState<Destination[]>([]);
   const [isRefreshing, setIsRefreshing] = useState(false);
+  const [selectedDestination, setSelectedDestination] = useState<Destination | null>(null);
 
   // Get highly rated destinations
   const highlyRated = destinations.filter(d => d.rating >= 4.8 && d.rating <= 5.0);
@@ -88,7 +90,12 @@ export default function FeaturedDestinations() {
               viewport={{ once: true, amount: 0.2 }}
             >
               {featured.map((destination, index) => (
-                <DestinationCard key={destination.id} destination={destination} index={index} />
+                <DestinationCard 
+                  key={destination.id} 
+                  destination={destination} 
+                  index={index} 
+                  onClick={setSelectedDestination}
+                />
               ))}
             </motion.div>
           )}
@@ -106,6 +113,12 @@ export default function FeaturedDestinations() {
           </Link>
         </div>
       </div>
+
+      <DestinationModal 
+        destination={selectedDestination} 
+        isOpen={!!selectedDestination} 
+        onClose={() => setSelectedDestination(null)} 
+      />
     </section>
   );
 }
