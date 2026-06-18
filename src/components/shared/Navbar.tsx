@@ -78,8 +78,8 @@ export default function Navbar() {
                 to={link.path}
                 className={({ isActive }) =>
                   clsx(
-                    'relative px-4 py-2 rounded-xl transition-colors duration-200 text-foreground',
-                    isActive ? 'text-brand-saffron font-semibold' : 'hover:text-brand-saffron hover:bg-brand-saffron/5'
+                    'relative px-4 py-2 rounded-xl transition-colors duration-300',
+                    isActive ? 'text-brand-saffron font-bold' : 'text-foreground hover:text-brand-saffron hover:bg-brand-saffron/5'
                   )
                 }
               >
@@ -87,11 +87,20 @@ export default function Navbar() {
                   <>
                     <span className="relative z-10">{link.name}</span>
                     {isActive && (
-                      <motion.div
-                        layoutId="navbar-active-pill"
-                        className="absolute inset-0 bg-brand-saffron/10 dark:bg-brand-saffron/15 rounded-xl z-0"
-                        transition={{ type: "spring", stiffness: 350, damping: 30 }}
-                      />
+                      <>
+                        {/* Soft background pill */}
+                        <motion.div
+                          layoutId="navbar-active-bg"
+                          className="absolute inset-0 bg-brand-saffron/10 dark:bg-brand-saffron/15 rounded-xl z-0"
+                          transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                        />
+                        {/* Indian Flag gradient sliding line */}
+                        <motion.div
+                          layoutId="navbar-active-line"
+                          className="absolute bottom-0 left-3 right-3 h-[3px] rounded-t-full bg-gradient-to-r from-[#FF9933] via-white to-[#138808] z-0 shadow-[0_0_8px_rgba(255,153,51,0.5)]"
+                          transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                        />
+                      </>
                     )}
                   </>
                 )}
@@ -138,12 +147,23 @@ export default function Navbar() {
                   onClick={closeMobileMenu}
                   className={({ isActive }) =>
                     clsx(
-                      'rounded-xl px-4 py-3 text-base font-medium transition-colors duration-200 text-foreground hover:bg-hover',
-                      isActive && 'bg-cyan-600/10 dark:bg-cyan-400/10 text-brand-cyan font-bold'
+                      'relative overflow-hidden rounded-xl px-4 py-3 text-base font-medium transition-colors duration-200',
+                      isActive ? 'bg-brand-saffron/10 dark:bg-brand-saffron/15 text-brand-saffron font-bold' : 'text-foreground hover:bg-hover'
                     )
                   }
                 >
-                  {link.name}
+                  {({ isActive }) => (
+                    <>
+                      {isActive && (
+                        <motion.div
+                          layoutId="mobile-nav-active-line"
+                          className="absolute left-0 top-1 bottom-1 w-[4px] rounded-r-full bg-gradient-to-b from-[#FF9933] via-white to-[#138808] shadow-[0_0_8px_rgba(255,153,51,0.5)]"
+                          transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                        />
+                      )}
+                      <span className="relative z-10">{link.name}</span>
+                    </>
+                  )}
                 </NavLink>
               ))}
             </div>
