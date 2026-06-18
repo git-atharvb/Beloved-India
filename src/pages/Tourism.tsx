@@ -76,6 +76,11 @@ export default function Tourism() {
  setCurrentPage(1);
  }, [searchTerm, selectedState, sortOrder]);
 
+ const handlePageChange = (updater: number | ((p: number) => number)) => {
+   setCurrentPage(updater);
+   window.scrollTo({ top: 0, behavior: 'smooth' });
+ };
+
  const itemsPerPage = 10;
  const showPagination = filteredDestinations.length > itemsPerPage;
  const totalPages = Math.ceil(filteredDestinations.length / itemsPerPage);
@@ -128,7 +133,7 @@ export default function Tourism() {
  {showPagination && totalPages > 1 && (
  <div className="flex flex-wrap justify-center items-center gap-2 mt-12">
  <button
- onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+ onClick={() => handlePageChange((p) => Math.max(1, p - 1))}
  disabled={currentPage === 1}
  className="px-4 py-2 rounded-lg bg-white border border-neutral-200 text-neutral-700 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-neutral-50 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-700 transition-colors font-medium"
  >
@@ -146,7 +151,7 @@ export default function Tourism() {
  return (
  <button
  key={pageNum}
- onClick={() => setCurrentPage(pageNum)}
+ onClick={() => handlePageChange(pageNum)}
  className={`w-10 h-10 rounded-lg flex items-center justify-center font-medium transition-colors ${
  currentPage === pageNum
  ? 'bg-brand-saffron text-white shadow-md'
@@ -166,7 +171,7 @@ export default function Tourism() {
  })}
 
  <button
- onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+ onClick={() => handlePageChange((p) => Math.min(totalPages, p + 1))}
  disabled={currentPage === totalPages}
  className="px-4 py-2 rounded-lg bg-white border border-neutral-200 text-neutral-700 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-neutral-50 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-700 transition-colors font-medium"
  >

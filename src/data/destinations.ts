@@ -1,4 +1,4 @@
-// Auto-generated 720 Destinations Data
+// Auto-generated Destinations Data
 export interface Destination {
   id: number;
   name: string;
@@ -117,7 +117,7 @@ export const destinations: Destination[] = [
     "id": 14,
     "name": "Mantralayam",
     "state": "Andhra Pradesh",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Legislative_Assembly_constituencies_of_Andhra_Pradesh_%28145-Mantralayam_highlighted%29.png/1280px-Legislative_Assembly_constituencies_of_Andhra_Pradesh_%28145-Mantralayam_highlighted%29.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Mantralayam_Temple_2024.jpg/1280px-Mantralayam_Temple_2024.jpg",
     "description": "Mantralayam Assembly constituency is a constituency in Kurnool district of Andhra Pradesh that elects representatives to the Andhra Pradesh Legislative Assembly in India.",
     "rating": 4.2
   },
@@ -267,10 +267,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 33,
-    "name": "Along",
+    "name": "Likabali",
     "state": "Arunachal Pradesh",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/India_Arunachal_Pradesh_Legislative_Assembly_2025.svg/1280px-India_Arunachal_Pradesh_Legislative_Assembly_2025.svg.png",
-    "description": "The Arunachal Pradesh Legislative Assembly is the unicameral state legislature of Arunachal Pradesh state in north-eastern India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Likabali%2C_Arunachal_pradesh.jpg/1280px-Likabali%2C_Arunachal_pradesh.jpg",
+    "description": "Likabali is a breathtaking destination in Arunachal Pradesh, offering visitors a truly unforgettable experience.",
     "rating": 4.8
   },
   {
@@ -285,7 +285,7 @@ export const destinations: Destination[] = [
     "id": 35,
     "name": "Pakke Tiger Reserve",
     "state": "Arunachal Pradesh",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Close_wing_position_of_Pareronia_avatar_Moore%2C_1857_%E2%80%93_Pale_Wanderer_Butterflies_of_Pakke_-_19.jpg/1280px-Close_wing_position_of_Pareronia_avatar_Moore%2C_1857_%E2%80%93_Pale_Wanderer_Butterflies_of_Pakke_-_19.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Cirrochroa_aoris_large_yeoman_butterflies_of_pakke_tiger_reserve_JEG2646_.jpg/1280px-Cirrochroa_aoris_large_yeoman_butterflies_of_pakke_tiger_reserve_JEG2646_.jpg",
     "description": "Pakke Tiger Reserve is a Project Tiger reserve in the East Kameng district of Arunachal Pradesh in Northeast India.",
     "rating": 4.6
   },
@@ -299,10 +299,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 37,
-    "name": "Daporijo",
+    "name": "Aadi people Home Arunachal pradesh",
     "state": "Arunachal Pradesh",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/National_Highways_Act%2C_1956_and_Schedule_thereto_%28updated%29.pdf/page1-960px-National_Highways_Act%2C_1956_and_Schedule_thereto_%28updated%29.pdf.jpg",
-    "description": "Daporijo Airport is located at Daporijo in the state of Arunachal Pradesh, India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Aadi_people_Home_Arunachal_pradesh.jpg/1280px-Aadi_people_Home_Arunachal_pradesh.jpg",
+    "description": "Aadi people Home Arunachal pradesh is a breathtaking destination in Arunachal Pradesh, offering visitors a truly unforgettable experience.",
     "rating": 4.1
   },
   {
@@ -373,7 +373,7 @@ export const destinations: Destination[] = [
     "id": 46,
     "name": "Sivasagar",
     "state": "Assam",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Sivasagar_Night_View.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Floral_Terracotta_Decoration_Rang_Ghar_Sivasagar.jpg_01.jpg/1280px-Floral_Terracotta_Decoration_Rang_Ghar_Sivasagar.jpg_01.jpg",
     "description": "Sivasagar ]) is a city and headquarter of the Sivasagar district, Assam.",
     "rating": 4.1
   },
@@ -637,7 +637,7 @@ export const destinations: Destination[] = [
     "id": 79,
     "name": "Rajnagar",
     "state": "Bihar",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Shiva_Temple_at_Rajnagar.jpg/1280px-Shiva_Temple_at_Rajnagar.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Durga_Temple_at_Rajnagar.jpg/1280px-Durga_Temple_at_Rajnagar.jpg",
     "description": "Rajnagar is the nearest village to Madhubani, Bihar, India.",
     "rating": 5
   },
@@ -645,7 +645,7 @@ export const destinations: Destination[] = [
     "id": 80,
     "name": "Lauriya Nandangarh",
     "state": "Bihar",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/Lauria_Nandangarh_pillar_of_Ashoka_side_view.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Lauriya_Nandangarh_Ashoka_Pillar_front.jpg",
     "description": "Lauria Nandangarh, also Lauriya Navandgarh, is a city or town about 14 km from Narkatiaganj and 28 km from Bettiah in West Champaran district of Bihar state in northern India.",
     "rating": 4.6
   },
@@ -803,10 +803,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 100,
-    "name": "Kawardha Palace",
+    "name": "Flora of Chaiturgarh forest hills Korba",
     "state": "Chhattisgarh",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Chhattisgarh is a landlocked state in central India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Flora_of_Chaiturgarh_forest_hills_Korba_%2C_Chhattisgarh.jpg/1280px-Flora_of_Chaiturgarh_forest_hills_Korba_%2C_Chhattisgarh.jpg",
+    "description": "Flora of Chaiturgarh forest hills Korba is a breathtaking destination in Chhattisgarh, offering visitors a truly unforgettable experience.",
     "rating": 4.4
   },
   {
@@ -941,7 +941,7 @@ export const destinations: Destination[] = [
     "id": 117,
     "name": "Divar Island",
     "state": "Goa",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Divar_caves.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/The_Church_of_Our_Lady_of_Compassion_is_located_in_the_village_of_Piedade%3B_in_Divar_island.jpg/1280px-The_Church_of_Our_Lady_of_Compassion_is_located_in_the_village_of_Piedade%3B_in_Divar_island.jpg",
     "description": "The island of Divar lies in the Mandovi river in the Indian state of Goa.",
     "rating": 4.4
   },
@@ -1093,7 +1093,7 @@ export const destinations: Destination[] = [
     "id": 136,
     "name": "Bhuj",
     "state": "Gujarat",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Gujarat_Earthquake_Relief_by_RSS_Volunteers.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/View_of_Bhuj_City_from_Prag_Mahal%2C_Bhuj_-_panoramio.jpg/1280px-View_of_Bhuj_City_from_Prag_Mahal%2C_Bhuj_-_panoramio.jpg",
     "description": "An earthquake struck India and Pakistan on 26 January 2001 at 08:46 am IST.",
     "rating": 4.9
   },
@@ -1149,7 +1149,7 @@ export const destinations: Destination[] = [
     "id": 143,
     "name": "Panipat",
     "state": "Haryana",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Panipat-elevated-corridor.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/The_tombs_of_Muhammad_Shah_and_Sikandar_Lodhi.jpg/1280px-The_tombs_of_Muhammad_Shah_and_Sikandar_Lodhi.jpg",
     "description": "Panipat is an industrial city, located 95 km north of Delhi and 169 km south of Chandigarh on NH-44 in Panipat district, Haryana, India.",
     "rating": 4.5
   },
@@ -1165,7 +1165,7 @@ export const destinations: Destination[] = [
     "id": 145,
     "name": "Pinjore Gardens",
     "state": "Haryana",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Pinjore_City_Chandigarh_India.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Pinjore_Gardens.JPG/1280px-Pinjore_Gardens.JPG",
     "description": "Pinjore is a town in Panchkula district in the Indian state of Haryana.",
     "rating": 4.3
   },
@@ -1219,9 +1219,9 @@ export const destinations: Destination[] = [
   },
   {
     "id": 152,
-    "name": "Tikli Bottom",
+    "name": "Damdama Lake",
     "state": "Haryana",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Kullu_Himachal_Pradesh_India_Woman.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Open_Hand_Monument_in_Chandigarh.jpg",
     "description": "A bindi is a coloured dot or, in modern times, a sticker worn on the centre of the forehead, by Hindus, Jains, and Buddhists from the Indian subcontinent.",
     "rating": 4.4
   },
@@ -1229,7 +1229,7 @@ export const destinations: Destination[] = [
     "id": 153,
     "name": "Karnal",
     "state": "Haryana",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Karnal_2.jpg/1280px-Karnal_2.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Karna_lake_05.jpg/1280px-Karna_lake_05.jpg",
     "description": "Karnal is a city located in the Indian state of Haryana and serves as the administrative headquarters of the Karnal district.",
     "rating": 4.3
   },
@@ -1243,10 +1243,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 155,
-    "name": "Sohna",
+    "name": "Painting of Salabat Bhatti and villagers at Rania",
     "state": "Haryana",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/The_Union_Minister_for_Science_%26_Technology_and_Earth_Sciences%2C_Dr._Harsh_Vardhan_in_a_group_photograph_at_an_International_Meet_of_Science_Ministers_and_Scientific_Advisors%2C_at_Sohna%2C_Haryana_on_November_22%2C_2015.jpg/1280px-thumbnail.jpg",
-    "description": "Sohna is a town and a municipal council in the Gurugram district of Haryana, India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Painting_of_Salabat_Bhatti_and_villagers_at_Rania_%28located_in_modern-day_Haryana%29%2C_circa_1816._Possibly_painted_by_the_atelier_of_Ghulam_%E2%80%98Ali_Khan.jpg",
+    "description": "Painting of Salabat Bhatti and villagers at Rania is a breathtaking destination in Haryana, offering visitors a truly unforgettable experience.",
     "rating": 4.5
   },
   {
@@ -1453,7 +1453,7 @@ export const destinations: Destination[] = [
     "id": 181,
     "name": "Ranchi",
     "state": "Jharkhand",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Ranchi_Cityscape.jpg/1280px-Ranchi_Cityscape.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Dassam_fall%2C_ranchi.jpg/1280px-Dassam_fall%2C_ranchi.jpg",
     "description": "Ranchi is the capital city and also the largest district by population of the Indian state of Jharkhand.",
     "rating": 4.5
   },
@@ -1477,7 +1477,7 @@ export const destinations: Destination[] = [
     "id": 184,
     "name": "Hazaribagh",
     "state": "Jharkhand",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Hazaribagh_night_scene.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hazaribagh_National_Park_101.jpg/1280px-Hazaribagh_National_Park_101.jpg",
     "description": "HazaribaghHindustani pronunciation: is a city and a municipal corporation in Hazaribagh district, Jharkhand, India.",
     "rating": 4.2
   },
@@ -1595,17 +1595,17 @@ export const destinations: Destination[] = [
   },
   {
     "id": 199,
-    "name": "Saranda Forest",
+    "name": "Jharkhand Hills India",
     "state": "Jharkhand",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Journal_of_the_Bombay_Natural_History_Society_%28IA_journalofbombay921995bomb%29.pdf/page1-1280px-Journal_of_the_Bombay_Natural_History_Society_%28IA_journalofbombay921995bomb%29.pdf.jpg",
-    "description": "Saranda forest is a dense forest in the hilly region of West Singhbhum, East Singhbhum, Saraikela district in the Indian state of Jharkhand.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Jharkhand_Hills_India.jpg/1280px-Jharkhand_Hills_India.jpg",
+    "description": "Jharkhand Hills India is a breathtaking destination in Jharkhand, offering visitors a truly unforgettable experience.",
     "rating": 4.7
   },
   {
     "id": 200,
-    "name": "Isco Rock Painting",
+    "name": "Maithon Dam",
     "state": "Jharkhand",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Bulu_Imam.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Maithon_Dam_2.jpg/1280px-Maithon_Dam_2.jpg",
     "description": "Bulu Imam is an environmental activist working for the protection of tribal culture and heritage in Jharkhand.",
     "rating": 4.5
   },
@@ -1653,7 +1653,7 @@ export const destinations: Destination[] = [
     "id": 206,
     "name": "Chikmagalur",
     "state": "Karnataka",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Chikmagalur%2C_India._%287793316622%29.jpg/1280px-Chikmagalur%2C_India._%287793316622%29.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Namma_karnataka_juz_beautiful.jpg/1280px-Namma_karnataka_juz_beautiful.jpg",
     "description": "Chikmagalur , previously known as Kiriya-Muguli, is a city and the headquarters of Chikmagalur district in the Indian state of Karnataka.",
     "rating": 4.5
   },
@@ -1709,7 +1709,7 @@ export const destinations: Destination[] = [
     "id": 213,
     "name": "Halebidu",
     "state": "Karnataka",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Halebidu_monuments_map%2C_1930_survey%2C_the_Dorasamudra_of_Hoysala_dynasty.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hoysaleswara_Temple_at_Halebidu.jpg/1280px-Hoysaleswara_Temple_at_Halebidu.jpg",
     "description": "Halebidu is a town located in Hassan District, Karnataka, India.",
     "rating": 4.6
   },
@@ -1733,7 +1733,7 @@ export const destinations: Destination[] = [
     "id": 216,
     "name": "Bijapur",
     "state": "Karnataka",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Bijapur_Montage.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Gol_Gumbaz%2C_Bijapur_1.jpg/1280px-Gol_Gumbaz%2C_Bijapur_1.jpg",
     "description": "Bijapur is the district headquarters of the Bijapur district of the Karnataka state of India.",
     "rating": 4.5
   },
@@ -2083,18 +2083,18 @@ export const destinations: Destination[] = [
   },
   {
     "id": 260,
-    "name": "Chitrakoot Madhya Pradesh",
+    "name": "Bhedaghat",
     "state": "Madhya Pradesh",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/2023_Madhya_Pradesh_Legislative_Assembly_Election_Result_Map.svg/1280px-2023_Madhya_Pradesh_Legislative_Assembly_Election_Result_Map.svg.png",
-    "description": "Legislative Assembly elections were held in Madhya Pradesh on 17 November 2023 to elect all 230 members of Madhya Pradesh Legislative Assembly.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/0010322_Saraswati_ghat%2C_Narmada_river%2C_Bhedaghat_Madhya_Pradesh_03.jpg/1280px-0010322_Saraswati_ghat%2C_Narmada_river%2C_Bhedaghat_Madhya_Pradesh_03.jpg",
+    "description": "Bhedaghat is a town and a nagar panchayat in Jabalpur district in the state of Madhya Pradesh, India.",
     "rating": 4.8
   },
   {
     "id": 261,
-    "name": "Gateway of India",
+    "name": "Nature of Chikhalgaon",
     "state": "Maharashtra",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Commemorative_Inscription_for_the_Landing_of_King_George_V_and_Queen_Mary_at_Gateway_of_India%2C_1911.jpg/1280px-Commemorative_Inscription_for_the_Landing_of_King_George_V_and_Queen_Mary_at_Gateway_of_India%2C_1911.jpg",
-    "description": "The Gateway of India is an arch-monument, completed in 1924, on the waterfront of Mumbai, Maharashtra, India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/99/Nature_of_Chikhalgaon%2C_Maharashtra_%282018%29_1.jpg",
+    "description": "Nature of Chikhalgaon is a breathtaking destination in Maharashtra, offering visitors a truly unforgettable experience.",
     "rating": 4.4
   },
   {
@@ -2157,7 +2157,7 @@ export const destinations: Destination[] = [
     "id": 269,
     "name": "Shirdi",
     "state": "Maharashtra",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Sai_baba_samadhi_mandir_.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Shirdi_Sai_Baba_Samadhi.jpg/1280px-Shirdi_Sai_Baba_Samadhi.jpg",
     "description": "Shirdi is a town and pilgrimage site in the Indian state of Maharashtra.",
     "rating": 4.8
   },
@@ -2299,10 +2299,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 287,
-    "name": "Churachandpur",
+    "name": "Khwairamband Bazar",
     "state": "Manipur",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Churachandpur_in_Manipur_%28India%29.svg/1280px-Churachandpur_in_Manipur_%28India%29.svg.png",
-    "description": "Churachandpur district is one of the 16 districts of the Indian state of Manipur, populated by Zo people, mainly the Paite.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Manipuri_woman_selling_glutinous_rice_at_Eema_Bazaar%2C_Imphal%2C_Manipur.JPG/1280px-Manipuri_woman_selling_glutinous_rice_at_Eema_Bazaar%2C_Imphal%2C_Manipur.JPG",
+    "description": "The Ima Market , also known as the Nupi Keithel or the Khwairamband Keithel , is a women-only market in the middle of Imphal in the Indian state of Manipur.",
     "rating": 4.2
   },
   {
@@ -2317,23 +2317,23 @@ export const destinations: Destination[] = [
     "id": 289,
     "name": "Tamenglong",
     "state": "Manipur",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Tamenglong_in_Manipur_%28India%29.svg/1280px-Tamenglong_in_Manipur_%28India%29.svg.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Wet_town%2C_foggy_town%2C_soffy_town_at_Tamenglong_HQ.jpg",
     "description": "Tamenglong district is one of the 16 districts of Manipur state in northeastern India.",
     "rating": 4.7
   },
   {
     "id": 290,
-    "name": "Kangpokpi",
+    "name": "Sadu Chiru Waterfall",
     "state": "Manipur",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The_Member_Autonomous_District_Council%2C_Kangpokpi%2C_Autonomous_District_Council%2C_Manipur%2C_Shri_Thongjalun_Mate%2C_the_Regional_Director_%28Nagaland_%26_Manipur_Region%29%2C_Directorate_of_Field_Publicity_%28DFP%29.jpg/1280px-thumbnail.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Sadu_Chiru_Waterfall.jpg",
     "description": "Kangpokpi , is the headquarter of Kangpokpi district and the Sadar Hills Autonomous District Council in the Indian state of Manipur.",
     "rating": 4.4
   },
   {
     "id": 291,
-    "name": "Moreh",
+    "name": "Khongjom War Memorial",
     "state": "Manipur",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Monestry_Temple_at_Moreh%2C_Manipur.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Khongjom_war_memorial.jpg/1280px-Khongjom_war_memorial.jpg",
     "description": "Moreh is a border town located on the India–Myanmar border in Tengnoupal district of the Indian state of Manipur at the entrance of the Kabaw Valley.",
     "rating": 4.8
   },
@@ -2379,10 +2379,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 297,
-    "name": "Khoupum Valley",
+    "name": "Shree Govindajee Temple",
     "state": "Manipur",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "On 3 May 2023, ethnic violence erupted in India's north-eastern state of Manipur between the Meitei people, a majority that lives in the Imphal Valley, and the Kuki-Zo tribal community from the surrounding hills.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Shree_Govindaji_temple%2C_Manipur.jpg/1280px-Shree_Govindaji_temple%2C_Manipur.jpg",
+    "description": "Shree Govindajee Temple is a Meitei Hindu temple, dedicated to Hindu deities Radha Krishna .",
     "rating": 4.3
   },
   {
@@ -2413,7 +2413,7 @@ export const destinations: Destination[] = [
     "id": 301,
     "name": "Cherrapunji",
     "state": "Meghalaya",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Cherrapunji.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Meghalaya_%22abode_of_clouds%22.jpg/1280px-Meghalaya_%22abode_of_clouds%22.jpg",
     "description": "Cherrapunji , also known as Sohra, is a sub-divisional town in the East Khasi Hills district in the Indian state of Meghalaya.",
     "rating": 4.2
   },
@@ -2461,7 +2461,7 @@ export const destinations: Destination[] = [
     "id": 307,
     "name": "Umiam Lake",
     "state": "Meghalaya",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Umiam_Lake_-_by_Vikramjit_Kakati.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Umiam_Lake%2C_Shillong%2C_Meghalaya.jpg/1280px-Umiam_Lake%2C_Shillong%2C_Meghalaya.jpg",
     "description": "Umïam Lake, also known as Bara Pani, is a reservoir in the hills 15 km north of Shillong in the state of Meghalaya, India.",
     "rating": 4.4
   },
@@ -2523,18 +2523,18 @@ export const destinations: Destination[] = [
   },
   {
     "id": 315,
-    "name": "Nongkhnum Island",
+    "name": "Lady Hydari Park",
     "state": "Meghalaya",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/India_Meghalaya_location_map.svg/1280px-India_Meghalaya_location_map.svg.png",
-    "description": "Nongkhnum River Island is the biggest river island in the Indian state of Meghalaya.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Lady_Hydari_Park.jpg/1280px-Lady_Hydari_Park.jpg",
+    "description": "Meghalaya is a state in northeast India, with Shillong as its capital city.",
     "rating": 4.9
   },
   {
     "id": 316,
-    "name": "Mawryngkhang Trek",
+    "name": "Nartiang Monoliths",
     "state": "Meghalaya",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Mawryngkhang Trek is a highly sought-after destination in Meghalaya, renowned for its rich heritage and breathtaking sights.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Monoliths_of_Nartiang%2C_Meghalaya.jpg/1280px-Monoliths_of_Nartiang%2C_Meghalaya.jpg",
+    "description": "West Jaintia Hills district is an administrative District in the state of Meghalaya in India.",
     "rating": 4.1
   },
   {
@@ -2613,7 +2613,7 @@ export const destinations: Destination[] = [
     "id": 326,
     "name": "Serchhip",
     "state": "Mizoram",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Legislative_Assembly_constituencies_of_Mizoram_%28Serchhip_highlighted%29.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Skyline_New_Serchhip.jpg/1280px-Skyline_New_Serchhip.jpg",
     "description": "Serchhip is one of the 40 Legislative Assembly constituencies of Mizoram state in India.",
     "rating": 4.5
   },
@@ -2683,17 +2683,17 @@ export const destinations: Destination[] = [
   },
   {
     "id": 335,
-    "name": "Murlen National Park",
+    "name": "Mizoram State Museum",
     "state": "Mizoram",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Murlen National Park is a national park located in the Champhai district Mizoram in India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Mizoram_State_Museum_-_0.jpg/1280px-Mizoram_State_Museum_-_0.jpg",
+    "description": "The Mizoram State Museum is in Aizawl, Mizoram, India.",
     "rating": 4.2
   },
   {
     "id": 336,
     "name": "Tamdil Lake",
     "state": "Mizoram",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Leptobrachella_tamdil-male.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Tam_Dil_View_from_Tam_Dil_Resort.jpg/1280px-Tam_Dil_View_from_Tam_Dil_Resort.jpg",
     "description": "Leptobrachella tamdil is an anuran amphibian belonging to the family Megophryidae.",
     "rating": 4.6
   },
@@ -2741,7 +2741,7 @@ export const destinations: Destination[] = [
     "id": 342,
     "name": "Dimapur",
     "state": "Nagaland",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Dimapur_Town.jpeg/1280px-Dimapur_Town.jpeg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kachari_Ruins_%28a_piece_of_history_waiting_to_be_explored%29.jpg/1280px-Kachari_Ruins_%28a_piece_of_history_waiting_to_be_explored%29.jpg",
     "description": "Dimapur is the largest city and municipality in the Indian state of Nagaland.",
     "rating": 4.6
   },
@@ -2765,7 +2765,7 @@ export const destinations: Destination[] = [
     "id": 345,
     "name": "Mon",
     "state": "Nagaland",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/da/Mon-Nagaland-Jim-Ankan-Deka-photography.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Darshak_1_04Jan17.jpg",
     "description": "Mon is a town located in the Mon District of the Indian state of Nagaland.",
     "rating": 4.1
   },
@@ -2787,10 +2787,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 348,
-    "name": "Tuensang",
+    "name": "Doyang reservoir and its suroundings in Nagaland JEG",
     "state": "Nagaland",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hornbill_Festival_2018.jpg/1280px-Hornbill_Festival_2018.jpg",
-    "description": "Tuensang is a town located in the northeastern part of the Indian state of Nagaland.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Doyang_reservoir_and_its_suroundings_in_Nagaland_JEG6018.JPG/1280px-Doyang_reservoir_and_its_suroundings_in_Nagaland_JEG6018.JPG",
+    "description": "Doyang reservoir and its suroundings in Nagaland JEG is a breathtaking destination in Nagaland, offering visitors a truly unforgettable experience.",
     "rating": 4.5
   },
   {
@@ -2843,18 +2843,18 @@ export const destinations: Destination[] = [
   },
   {
     "id": 355,
-    "name": "Triple Falls Seithekima",
+    "name": "Breathtaking beauty of Dzukou Valley in Manipur",
     "state": "Nagaland",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Triple Falls Seithekima is a highly sought-after destination in Nagaland, renowned for its rich heritage and breathtaking sights.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg/1280px-Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg",
+    "description": "Breathtaking beauty of Dzukou Valley in Manipur is a breathtaking destination in Nagaland, offering visitors a truly unforgettable experience.",
     "rating": 4.8
   },
   {
     "id": 356,
-    "name": "Japfu Peak",
+    "name": "Naga Heritage Village",
     "state": "Nagaland",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Mount Japfü is a mountain peak of the Barail Range, located in Kohima District of Nagaland in India, about 15 kilometres south of Kohima, the capital of Nagaland.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Rengma_Nagas_at_Kisama_Heritage_Village%2C_Nagaland.jpg/1280px-Rengma_Nagas_at_Kisama_Heritage_Village%2C_Nagaland.jpg",
+    "description": "Kisama Heritage Village is a Heritage Village located on the slopes of a hill between Kigwema and Phesama Villages in the Kohima District of the Indian state of Nagaland.",
     "rating": 4.8
   },
   {
@@ -2867,10 +2867,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 358,
-    "name": "Benreu",
+    "name": "Hornbill Festival of Nagaland",
     "state": "Nagaland",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Der_Goldsucher_-_%28IA_dergoldsucher01hoff%29.pdf/page1-500px-Der_Goldsucher_-_%28IA_dergoldsucher01hoff%29.pdf.jpg",
-    "description": "Benreu is a village in the Peren district of Nagaland, India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Hornbill_Festival_of_Nagaland.jpg",
+    "description": "Hornbill Festival of Nagaland is a breathtaking destination in Nagaland, offering visitors a truly unforgettable experience.",
     "rating": 4.7
   },
   {
@@ -2883,10 +2883,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 360,
-    "name": "Saramati Peak",
+    "name": "Nagaland State Museum",
     "state": "Nagaland",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Saramati is a peak at an altitude of 2,885 metres on the border the Indian state of Nagaland and the Naga Self-Administered Zone of the Sagaing Region of Myanmar.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Kohima_State_Museum.jpeg/1280px-Kohima_State_Museum.jpeg",
+    "description": "The Nagaland State Museum is a museum located in Bayavü Hill, Kohima, Nagaland, India.",
     "rating": 4.2
   },
   {
@@ -2909,7 +2909,7 @@ export const destinations: Destination[] = [
     "id": 363,
     "name": "Bhubaneswar",
     "state": "Odisha",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Bhubaneswar_at_night_from_sky.jpg/1280px-Bhubaneswar_at_night_from_sky.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lingaraja_Temple_01.jpg/1280px-Lingaraja_Temple_01.jpg",
     "description": "Bhubaneswar is the capital and the largest city of the Indian state of Odisha.",
     "rating": 4.8
   },
@@ -2957,7 +2957,7 @@ export const destinations: Destination[] = [
     "id": 369,
     "name": "Chandipur",
     "state": "Odisha",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Chandipur.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Sunset_at_Chandipur_Sea_Beach%2C_Odisha.jpg/1280px-Sunset_at_Chandipur_Sea_Beach%2C_Odisha.jpg",
     "description": "Chandipur is a resort town in Balasore District, Odisha, India.",
     "rating": 4.2
   },
@@ -3117,7 +3117,7 @@ export const destinations: Destination[] = [
     "id": 389,
     "name": "Kapurthala",
     "state": "Punjab",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Kapurthala_flag.svg/1280px-Kapurthala_flag.svg.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Jagatjit_Palace_-_Kapurthala_Sainik_School.jpg",
     "description": "Kapurthala State was a kingdom and later princely state of the Punjab Province of British India.",
     "rating": 4.8
   },
@@ -3293,7 +3293,7 @@ export const destinations: Destination[] = [
     "id": 411,
     "name": "Bundi",
     "state": "Rajasthan",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Lady_in_Bundi%2C_Rajasthan.JPG/1280px-Lady_in_Bundi%2C_Rajasthan.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Bundi_fort_%284180260008%29.jpg/1280px-Bundi_fort_%284180260008%29.jpg",
     "description": "Bundi is a city in the Hadoti region of Rajasthan state in northwest India.",
     "rating": 4.6
   },
@@ -3477,7 +3477,7 @@ export const destinations: Destination[] = [
     "id": 434,
     "name": "Pemayangtse Monastery",
     "state": "Sikkim",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Main_Shrine_of_Pemangytse_Gompa_with_prayer_flags.jpg/1280px-Main_Shrine_of_Pemangytse_Gompa_with_prayer_flags.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pemayangtse_Monastery_Sikkim_India.jpg/1280px-Pemayangtse_Monastery_Sikkim_India.jpg",
     "description": "The Pemayangtse Monastery is a Buddhist monastery in Pemayangtse, near Gyalshing city in Gyalshing district in the northeastern Indian state of Sikkim, located 6 km from Gyalshing city, the district headquarters, 110 km west of Gangtok.",
     "rating": 4.5
   },
@@ -3509,7 +3509,7 @@ export const destinations: Destination[] = [
     "id": 438,
     "name": "Kaluk",
     "state": "Sikkim",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flickr_-_Sukanto_Debnath_-_A_man_from_market%2C_Kaluk_%28Sikkim%29.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Beautiful_pink_rose_in_Sikkim_hills.jpg/1280px-Beautiful_pink_rose_in_Sikkim_hills.jpg",
     "description": "Kaluk is a small village located in the Himalayan foothills of West Sikkim, near the West Sikkim capital of Gyalshing in East India.",
     "rating": 4.4
   },
@@ -3525,7 +3525,7 @@ export const destinations: Destination[] = [
     "id": 440,
     "name": "Lachen",
     "state": "Sikkim",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Bundesarchiv_Bild_135-KA-02-055%2C_Tibetexpedition%2C_Lachen%2C_Dorf.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Lachen_Monastery_in_Lachen_village%2C_North_Sikkim%2C_India_03.jpg/1280px-Lachen_Monastery_in_Lachen_village%2C_North_Sikkim%2C_India_03.jpg",
     "description": "Lachen – The “Big Pass” of North Sikkim\nLachen is a high-altitude town and hill station located in the Mangan district of Sikkim, India, near the Indo-Tibetan border.",
     "rating": 4.8
   },
@@ -3549,7 +3549,7 @@ export const destinations: Destination[] = [
     "id": 443,
     "name": "Mahabalipuram",
     "state": "Tamil Nadu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/A_collage_of_Mamallapuram_town_Tamil_Nadu_India.jpg/1280px-A_collage_of_Mamallapuram_town_Tamil_Nadu_India.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Mamallapuram%2C_Shore_Temple%2C_India.jpg/1280px-Mamallapuram%2C_Shore_Temple%2C_India.jpg",
     "description": "Mamallapuram is a town in Chengalpattu district in the southeastern Indian state of Tamil Nadu, best known for the UNESCO World Heritage Site of 7th- and 8th-century Hindu Group of Monuments at Mahabalipuram.",
     "rating": 4.8
   },
@@ -3581,7 +3581,7 @@ export const destinations: Destination[] = [
     "id": 447,
     "name": "Rameswaram",
     "state": "Tamil Nadu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Rameswaram_montage_image.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Ramanathaswamy_Temple_night_view.jpg/1280px-Ramanathaswamy_Temple_night_view.jpg",
     "description": "Rameswaram is a town in the Ramanathapuram district of the Indian state of Tamil Nadu.",
     "rating": 4.6
   },
@@ -3597,7 +3597,7 @@ export const destinations: Destination[] = [
     "id": 449,
     "name": "Thanjavur",
     "state": "Tamil Nadu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Thanjavur_2.jpg/1280px-Thanjavur_2.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg",
     "description": "Thanjavur , also known as Thanjai, previously known as Tanjore, is a city in the Indian state of Tamil Nadu.",
     "rating": 4.5
   },
@@ -3677,7 +3677,7 @@ export const destinations: Destination[] = [
     "id": 459,
     "name": "Pichavaram",
     "state": "Tamil Nadu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Pichavaram-Pno.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Pichavaram_Mangrove_Forest.jpg/1280px-Pichavaram_Mangrove_Forest.jpg",
     "description": "Pichavaram is one of the villages of Parangipettai in Cuddalore District, Tamil Nadu, India.",
     "rating": 4.6
   },
@@ -3733,7 +3733,7 @@ export const destinations: Destination[] = [
     "id": 466,
     "name": "Hyderabad",
     "state": "Telangana",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Downtown_hyderabad_drone.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/CHARMINAR%2C_Hyderabad_01.jpg/1280px-CHARMINAR%2C_Hyderabad_01.jpg",
     "description": "Hyderabad is the capital and largest city of the Indian state of Telangana.",
     "rating": 4.1
   },
@@ -3749,7 +3749,7 @@ export const destinations: Destination[] = [
     "id": 468,
     "name": "Medak",
     "state": "Telangana",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Medak_in_Telangana_%28India%29.svg/1280px-Medak_in_Telangana_%28India%29.svg.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Medak_Cathedral%2C_Medak%2C_Telangana.jpg/1280px-Medak_Cathedral%2C_Medak%2C_Telangana.jpg",
     "description": "Medak Lok Sabha constituency is one of the 17 Lok Sabha constituencies in Telangana state in southern India.",
     "rating": 4.9
   },
@@ -3757,7 +3757,7 @@ export const destinations: Destination[] = [
     "id": 469,
     "name": "Nizamabad",
     "state": "Telangana",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Nizamabad_Montage.jpg/1280px-Nizamabad_Montage.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Graves_at_Nizamabad_Fort.jpg/1280px-Graves_at_Nizamabad_Fort.jpg",
     "description": "Nizamabad, also informally known as Induru or Indur, is a city in the Indian state of Telangana.",
     "rating": 4.7
   },
@@ -3925,7 +3925,7 @@ export const destinations: Destination[] = [
     "id": 490,
     "name": "Udaipur Tripura",
     "state": "Tripura",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tripura_Sundari_Temple_in_Udaipur%2C_Tripura_-_premises_2018-03-25_-2.jpg/1280px-Tripura_Sundari_Temple_in_Udaipur%2C_Tripura_-_premises_2018-03-25_-2.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_minar_inside_Neermahal%2C_Tripura%2C_India.jpg/1280px-A_minar_inside_Neermahal%2C_Tripura%2C_India.jpg",
     "description": "Tripura Sundari , also known as Lalita, Shodashi, Kamakshi, and Rajarajeshvari, is a Hindu goddess revered primarily within the Shaktism tradition and recognized as one of the ten Mahavidyas.",
     "rating": 4.6
   },
@@ -3957,7 +3957,7 @@ export const destinations: Destination[] = [
     "id": 494,
     "name": "Kamalasagar",
     "state": "Tripura",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Kamalasagar_Assembly_constituency_map.svg/1280px-Kamalasagar_Assembly_constituency_map.svg.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Kamalasagar.jpg/1280px-Kamalasagar.jpg",
     "description": "Kamalasagar is one of the 60 Legislative Assembly constituencies of Tripura state in India.",
     "rating": 4.4
   },
@@ -3973,24 +3973,24 @@ export const destinations: Destination[] = [
     "id": 496,
     "name": "Bison National Park",
     "state": "Tripura",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Indian_Bison_Gobo.jpg/1280px-Indian_Bison_Gobo.jpg",
     "description": "Tripura is a state located in North-East India and the third smallest state in India by size.",
     "rating": 4.9
   },
   {
     "id": 497,
-    "name": "Rowa Wildlife Sanctuary",
+    "name": "Tripura girls in their traditional attire",
     "state": "Tripura",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Rowa Wildlife Sanctuary is a wildlife sanctuary in the North Tripura district of the Indian state of Tripura.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Tripura_girls_in_their_traditional_attire.jpg",
+    "description": "Tripura girls in their traditional attire is a breathtaking destination in Tripura, offering visitors a truly unforgettable experience.",
     "rating": 4.9
   },
   {
     "id": 498,
-    "name": "Deotamura",
+    "name": "Unakoti Rock Carvings",
     "state": "Tripura",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Deotamura is a highly sought-after destination in Tripura, renowned for its rich heritage and breathtaking sights.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Unakoti.jpg/1280px-Unakoti.jpg",
+    "description": "Dharinjoy is a breathtaking destination in Tripura, offering visitors a truly unforgettable experience.",
     "rating": 4
   },
   {
@@ -4069,7 +4069,7 @@ export const destinations: Destination[] = [
     "id": 508,
     "name": "Allahabad",
     "state": "Uttar Pradesh",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Allahabad_Montage_II_Dec_2014.jpg/1280px-Allahabad_Montage_II_Dec_2014.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Boat_Pilgrims_Triveni_Sangam_Allahabad_Jan24_A7C_08513.jpg/1280px-Boat_Pilgrims_Triveni_Sangam_Allahabad_Jan24_A7C_08513.jpg",
     "description": "Prayagraj , formerly and colloquially known as Allahabad, is a metropolis in the Indian state of Uttar Pradesh.",
     "rating": 4.3
   },
@@ -4125,7 +4125,7 @@ export const destinations: Destination[] = [
     "id": 515,
     "name": "Chunar Fort",
     "state": "Uttar Pradesh",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/North_view_of_the_fort_of_Chunargarh_on_the_Ganges_from_across_the_river..jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_03.jpg/1280px-Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_03.jpg",
     "description": "The Chunar Fort is located in Mirzapur district of Uttar Pradesh, in India.",
     "rating": 4.5
   },
@@ -4461,7 +4461,7 @@ export const destinations: Destination[] = [
     "id": 557,
     "name": "Lava Lolegaon",
     "state": "West Bengal",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Kagyu_Thekchen_Ling_Lava_Monastery%2C_Lava%2C_West_Bengal%2C_India.jpg/1280px-Kagyu_Thekchen_Ling_Lava_Monastery%2C_Lava%2C_West_Bengal%2C_India.jpg",
     "description": "Loleygaon is a village lying on NH 717A in the Kalimpong II CD block in the Kalimpong Sadar subdivision of the Kalimpong district in the Indian state of West Bengal.",
     "rating": 4.4
   },
@@ -4557,7 +4557,7 @@ export const destinations: Destination[] = [
     "id": 569,
     "name": "Viper Island",
     "state": "Andaman and Nicobar Islands",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Andaman_Islands.PNG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Viper_Island_structure_ruins.jpg/1280px-Viper_Island_structure_ruins.jpg",
     "description": "The Andaman Islands are an archipelago, made up of 200 islands, in the northeastern Indian Ocean about 130 km southwest off the coasts of Myanmar's Ayeyarwady Region.",
     "rating": 4.5
   },
@@ -4565,7 +4565,7 @@ export const destinations: Destination[] = [
     "id": 570,
     "name": "Mount Harriet",
     "state": "Andaman and Nicobar Islands",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/IN-AN.svg/1280px-IN-AN.svg.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Mt._Harriet_National_Park.jpg/1280px-Mt._Harriet_National_Park.jpg",
     "description": "Andaman and Nicobar Islands Lok Sabha constituency is the only Lok Sabha constituency in the Union Territory of Andaman and Nicobar Islands.",
     "rating": 4.2
   },
@@ -4589,7 +4589,7 @@ export const destinations: Destination[] = [
     "id": 573,
     "name": "Wandoor Beach",
     "state": "Andaman and Nicobar Islands",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/North-Sentinel-Island-Sentinel-2A.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Wandoor_Beach%2C_Andaman_%26_Nicobar_Islands.jpg/1280px-Wandoor_Beach%2C_Andaman_%26_Nicobar_Islands.jpg",
     "description": "North Sentinel Island is one of the Andaman Islands, an Indian archipelago in the Bay of Bengal that also includes South Sentinel Island.",
     "rating": 4.1
   },
@@ -4597,7 +4597,7 @@ export const destinations: Destination[] = [
     "id": 574,
     "name": "Chidiya Tapu",
     "state": "Andaman and Nicobar Islands",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Chennai_Light_House.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Chidiya_tapu_sunset%2C_Andaman.jpg/1280px-Chidiya_tapu_sunset%2C_Andaman.jpg",
     "description": "There are many lighthouses along the long coastline of India and in the associated islands.",
     "rating": 5
   },
@@ -4605,7 +4605,7 @@ export const destinations: Destination[] = [
     "id": 575,
     "name": "Corbyn Cove Beach",
     "state": "Andaman and Nicobar Islands",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/US_Navy_050102-N-9593M-040_A_village_near_the_coast_of_Sumatra_lays_in_ruin_after_the_Tsunami_that_struck_South_East_Asia.jpg/1280px-US_Navy_050102-N-9593M-040_A_village_near_the_coast_of_Sumatra_lays_in_ruin_after_the_Tsunami_that_struck_South_East_Asia.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Corbyns_cove_beach-3-port_blair-andaman-India.jpg/1280px-Corbyns_cove_beach-3-port_blair-andaman-India.jpg",
     "description": "On 26 December 2004, at 07:58:53 local time , a Mw 9.",
     "rating": 4.4
   },
@@ -4635,10 +4635,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 579,
-    "name": "Rangat",
+    "name": "Cinque Island",
     "state": "Andaman and Nicobar Islands",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "The Andaman and Nicobar Islands is a union territory of India comprising 836 islands, of which only 31 are inhabited.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Shoal_of_bluefin_trevally_at_Cinque_island%2C_Andaman.jpg/1280px-Shoal_of_bluefin_trevally_at_Cinque_island%2C_Andaman.jpg",
+    "description": "The Cinque Islands are a pair of islands in the Andaman Archipelago, on the north side of Duncan Passage, between Rutland Island and Passage Island.",
     "rating": 4.1
   },
   {
@@ -4691,10 +4691,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 586,
-    "name": "Pinjore Gardens",
+    "name": "Palace of Assembly Chandigarh",
     "state": "Chandigarh",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Pinjore_Garden_Chandigarh_India_%282%29.JPG",
-    "description": "Yadavindra Gardens, also known as Pinjore Gardens, is a historic 17th century garden located in Pinjore city of Panchkula district in the Indian state of Haryana.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Palace_of_Assembly_Chandigarh_2006.jpg/1280px-Palace_of_Assembly_Chandigarh_2006.jpg",
+    "description": "Palace of Assembly Chandigarh is a breathtaking destination in Chandigarh, offering visitors a truly unforgettable experience.",
     "rating": 4.7
   },
   {
@@ -4749,7 +4749,7 @@ export const destinations: Destination[] = [
     "id": 593,
     "name": "Terrace Garden Chandigarh",
     "state": "Chandigarh",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Yadvindra_garden_or_Pinjore_garden%2Cchandigarh.jpg/1280px-Yadvindra_garden_or_Pinjore_garden%2Cchandigarh.jpg",
     "description": "Chandigarh is a city and union territory in northwestern India, serving as a shared capital for the states of Punjab and Haryana.",
     "rating": 4.2
   },
@@ -4795,10 +4795,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 599,
-    "name": "Fun City Chandigarh",
+    "name": "Shikara",
     "state": "Chandigarh",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Wikidata_-_A_Gentle_Introduction_for_Complete_Beginners.pdf/page1-1280px-Wikidata_-_A_Gentle_Introduction_for_Complete_Beginners.pdf.jpg",
-    "description": "Chandigarh is a city and union territory in northwestern India, serving as a shared capital for the states of Punjab and Haryana.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Shikara_-_Sukhna_Lake_-_Chandigarh_2016-08-07_%28edit%29.jpg/1280px-Shikara_-_Sukhna_Lake_-_Chandigarh_2016-08-07_%28edit%29.jpg",
+    "description": "Shikara is a breathtaking destination in Chandigarh, offering visitors a truly unforgettable experience.",
     "rating": 4.4
   },
   {
@@ -4821,7 +4821,7 @@ export const destinations: Destination[] = [
     "id": 602,
     "name": "Nagoa Beach",
     "state": "Dadra and Nagar Haveli and Daman and Diu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Diu_Island_Map.png/1280px-Diu_Island_Map.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Nagoa_Beach_2_DIU.jpg/1280px-Nagoa_Beach_2_DIU.jpg",
     "description": "Diu district is one of the three districts of the union territory of Dadra and Nagar Haveli and Daman and Diu of India.",
     "rating": 4.1
   },
@@ -4869,17 +4869,9 @@ export const destinations: Destination[] = [
     "id": 608,
     "name": "Diu",
     "state": "Dadra and Nagar Haveli and Daman and Diu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/IN-DD.svg/1280px-IN-DD.svg.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Diu%2CGujarat%2CIndia_%283%29.jpg",
     "description": "Daman and Diu was a union territory in northwestern India.",
     "rating": 4.6
-  },
-  {
-    "id": 609,
-    "name": "Dudhani",
-    "state": "Dadra and Nagar Haveli and Daman and Diu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Silvassa is a city and the headquarters of the Dadra and Nagar Haveli district in the Union territory of Dadra and Nagar Haveli and Daman and Diu in western India.",
-    "rating": 4.5
   },
   {
     "id": 610,
@@ -4893,7 +4885,7 @@ export const destinations: Destination[] = [
     "id": 611,
     "name": "St Paul Church Diu",
     "state": "Dadra and Nagar Haveli and Daman and Diu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/St._Paul%27s_Church%2C_Diu_edited_from_St._Paul%27s_Church_Daman_%26_Diu%2C_Diu_Dsc-0004.jpg/1280px-St._Paul%27s_Church%2C_Diu_edited_from_St._Paul%27s_Church_Daman_%26_Diu%2C_Diu_Dsc-0004.jpg",
     "description": "Dadra and Nagar Haveli and Daman and Diu is a union territory in India.",
     "rating": 4.6
   },
@@ -4901,7 +4893,7 @@ export const destinations: Destination[] = [
     "id": 612,
     "name": "Gangeshwar Temple Diu",
     "state": "Dadra and Nagar Haveli and Daman and Diu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Sea_Of_DIU_Gujarat.jpg/1280px-Sea_Of_DIU_Gujarat.jpg",
     "description": "Gangeshwar Mahadev Temple or simply Gangeshwar Temple is a Hindu temple dedicated to Lord Shiva located at seashore of Fudam village just 3 km away from Diu in the union territory of DNDD.",
     "rating": 4.8
   },
@@ -4909,7 +4901,7 @@ export const destinations: Destination[] = [
     "id": 613,
     "name": "Diu Museum",
     "state": "Dadra and Nagar Haveli and Daman and Diu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Monuments_of_Diu_%28City%29.jpg/1280px-Monuments_of_Diu_%28City%29.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Front_View_Thomas_Church.JPG/1280px-Front_View_Thomas_Church.JPG",
     "description": "Diu , also known as Diu Town, is a medieval fortified town in Diu district in the union territory of Dadra and Nagar Haveli and Daman and Diu, India.",
     "rating": 4.7
   },
@@ -4917,7 +4909,7 @@ export const destinations: Destination[] = [
     "id": 614,
     "name": "INS Khukri Memorial",
     "state": "Dadra and Nagar Haveli and Daman and Diu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/IN-GDD.svg/1280px-IN-GDD.svg.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Model_of_INS_Khukri_at_memorial_of_the_ship%2C_2012.jpg/1280px-Model_of_INS_Khukri_at_memorial_of_the_ship%2C_2012.jpg",
     "description": "The Indian annexation of Goa was the process in which the Republic of India annexed the Portuguese State of India, the then Portuguese Indian territories of Goa, Daman and Diu, starting with the armed action carried out by the Indian Armed Forces in December 1961.",
     "rating": 4.9
   },
@@ -4925,7 +4917,7 @@ export const destinations: Destination[] = [
     "id": 615,
     "name": "Ghoghla Beach",
     "state": "Dadra and Nagar Haveli and Daman and Diu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Map_of_Diu_with_Forte_Simbor_%28Forte_Pani_Kota%29_1934.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Limpets%2C_Ghoghla_Beach%2C_Diu%2C_Diu-29-_29.06.2021.jpg/1280px-Limpets%2C_Ghoghla_Beach%2C_Diu%2C_Diu-29-_29.06.2021.jpg",
     "description": "Gogolá or Ghogolá is a village within the Diu district, in the territory of the Union of DNDD, in India.",
     "rating": 4.8
   },
@@ -4933,7 +4925,7 @@ export const destinations: Destination[] = [
     "id": 616,
     "name": "Zampa Gateway",
     "state": "Dadra and Nagar Haveli and Daman and Diu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Gate_of_diu_city_in_India.jpg/1280px-Gate_of_diu_city_in_India.jpg",
     "description": "Diu , also known as Diu Town, is a medieval fortified town in Diu district in the union territory of Dadra and Nagar Haveli and Daman and Diu, India.",
     "rating": 4.6
   },
@@ -4952,22 +4944,6 @@ export const destinations: Destination[] = [
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Diu_fort%2C_India.JPG/1280px-Diu_fort%2C_India.JPG",
     "description": "Diu Island is an island off the southern coast of Gujarat's Kathiawar peninsula, separated from the mainland by a tidal creek.",
     "rating": 4.6
-  },
-  {
-    "id": 619,
-    "name": "Tribal Museum Silvassa",
-    "state": "Dadra and Nagar Haveli and Daman and Diu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Western India is a loosely defined region of India consisting of western states of Republic of India.",
-    "rating": 4.2
-  },
-  {
-    "id": 620,
-    "name": "Satmaliya Deer Park",
-    "state": "Dadra and Nagar Haveli and Daman and Diu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Dadra and Nagar Haveli Wildlife Sanctuary is a wildlife sanctuary located in the Indian Union Territory of Dadra and Nagar Haveli and Daman and Diu.",
-    "rating": 4.9
   },
   {
     "id": 621,
@@ -5413,7 +5389,7 @@ export const destinations: Destination[] = [
     "id": 676,
     "name": "Changthang Plateau",
     "state": "Ladakh",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Changpas_nomadic_people_-_Changtang_-_Tibet.jpg/1280px-Changpas_nomadic_people_-_Changtang_-_Tibet.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Changthang_-_Blue_skies_%289368525827%29.jpg",
     "description": "The Changtang is a part of the high altitude Tibetan Plateau in western and northern Tibet extending into the southern edges of Xinjiang as well as Changthang district in southeastern Ladakh of India, with vast highlands and giant lakes.",
     "rating": 4.3
   },
@@ -5458,14 +5434,6 @@ export const destinations: Destination[] = [
     "rating": 4.4
   },
   {
-    "id": 682,
-    "name": "Bangaram Atoll",
-    "state": "Lakshadweep",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Bangaram-mother_with_child.jpg",
-    "description": "Bangaram is an atoll in the Union Territory of Lakshadweep, India.",
-    "rating": 4.3
-  },
-  {
     "id": 683,
     "name": "Kavaratti",
     "state": "Lakshadweep",
@@ -5491,33 +5459,25 @@ export const destinations: Destination[] = [
   },
   {
     "id": 686,
-    "name": "Kadmat Island",
+    "name": "Pitti Island",
     "state": "Lakshadweep",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Map_of_Lakshadweep-en.svg/1280px-Map_of_Lakshadweep-en.svg.png",
-    "description": "Kadmat Island, also known as Cardamom Island, is a coral island belonging to the Amindivi subgroup of islands of the Lakshadweep archipelago in India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Snorkeling_on_Pitti_Island_in_Kalpeni.jpg",
+    "description": "Pitti Island is a highly sought-after destination in Lakshadweep, renowned for its rich heritage.",
     "rating": 4.4
   },
   {
     "id": 687,
-    "name": "Amini",
+    "name": "Fishermen at Kavarathi",
     "state": "Lakshadweep",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Portrait_of_Suleiman_Amini_Tabrizi_%28edited%29.jpg",
-    "description": "Amini is a census town in the Union Territory of Lakshadweep, India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Fishermen_at_Kavarathi%2C_Lakshadweep%2C_India_%28edit%29.jpg/1280px-Fishermen_at_Kavarathi%2C_Lakshadweep%2C_India_%28edit%29.jpg",
+    "description": "Fishermen at Kavarathi is a breathtaking destination in Lakshadweep, offering visitors a truly unforgettable experience.",
     "rating": 4.3
   },
   {
-    "id": 688,
-    "name": "Andrott",
-    "state": "Lakshadweep",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Underoot_Island_-_btv1b531431970.jpg/1280px-Underoot_Island_-_btv1b531431970.jpg",
-    "description": "Andrott Island, also known as Androth, is a small inhabited island in the Union Territory of Lakshadweep, a group of 36 coral islands scattered in the Arabian Sea off the western coast of India.",
-    "rating": 4.9
-  },
-  {
     "id": 689,
-    "name": "Bitra",
+    "name": "Chetlat Island",
     "state": "Lakshadweep",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Vice_Admiral_AK_Chawla%2C_FOCINC%2C_SNC_visited_Bitra_Island_on_4_October_2021_02.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Lakshadweep_Islands_-_NASA_Earth_Observatory.jpg",
     "description": "Bitra, also known as Bitrā Par, is a coral atoll belonging to the Amindivi Subgroup of islands of the Union Territory of Lakshadweep in India.",
     "rating": 4.7
   },
@@ -5538,14 +5498,6 @@ export const destinations: Destination[] = [
     "rating": 4.2
   },
   {
-    "id": 692,
-    "name": "Suheli Par",
-    "state": "Lakshadweep",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Seuheli_Islands_and_Reef_called_by_the_Natives_Seuheli-Par_-_by_John_Mc._Cluer_1790_%3B_W._Harrison_sc._%3B_J._Walker_sculpt_-_btv1b531432066.jpg/1280px-Seuheli_Islands_and_Reef_called_by_the_Natives_Seuheli-Par_-_by_John_Mc._Cluer_1790_%3B_W._Harrison_sc._%3B_J._Walker_sculpt_-_btv1b531432066.jpg",
-    "description": "Suheli Par is a coral atoll in the Union Territory of Lakshadweep, India.",
-    "rating": 4.4
-  },
-  {
     "id": 693,
     "name": "Pitti Bird Sanctuary",
     "state": "Lakshadweep",
@@ -5555,18 +5507,18 @@ export const destinations: Destination[] = [
   },
   {
     "id": 694,
-    "name": "Thinnakara Island",
+    "name": "Porcupine ray from Lakshadweep JJH edit",
     "state": "Lakshadweep",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Lakshadweep is a union territory of India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Porcupine_ray_from_Lakshadweep_JJH_edit.jpg/1280px-Porcupine_ray_from_Lakshadweep_JJH_edit.jpg",
+    "description": "Porcupine ray from Lakshadweep JJH edit is a breathtaking destination in Lakshadweep, offering visitors a truly unforgettable experience.",
     "rating": 4.5
   },
   {
     "id": 695,
-    "name": "Marine Museum Kavaratti",
+    "name": "Porcupine ray from Lakshadweep",
     "state": "Lakshadweep",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Kadmat Island, also known as Cardamom Island, is a coral island belonging to the Amindivi subgroup of islands of the Lakshadweep archipelago in India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Porcupine_ray_from_Lakshadweep.jpg/1280px-Porcupine_ray_from_Lakshadweep.jpg",
+    "description": "Porcupine ray from Lakshadweep is a breathtaking destination in Lakshadweep, offering visitors a truly unforgettable experience.",
     "rating": 4.8
   },
   {
@@ -5579,18 +5531,18 @@ export const destinations: Destination[] = [
   },
   {
     "id": 697,
-    "name": "Kadmat Beach",
+    "name": "A beach at Kavaratti",
     "state": "Lakshadweep",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Kadmat Beach is a beach located on the island of Kadmat in Lakshadweep, India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/A_beach_at_Kavaratti%2C_Lakshadweep.jpg/1280px-A_beach_at_Kavaratti%2C_Lakshadweep.jpg",
+    "description": "A beach at Kavaratti is a breathtaking destination in Lakshadweep, offering visitors a truly unforgettable experience.",
     "rating": 4.6
   },
   {
     "id": 698,
-    "name": "Bangaram Beach",
+    "name": "Intertidal zone Lakshadweep",
     "state": "Lakshadweep",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Prime_Minister_of_Bharat%2C_Shri_Narendra_Damodardas_Modi_at_pristine_beautiful_beaches_at_Bangaram%2C_in_Lakshadweep_%281%29.jpg/1280px-Prime_Minister_of_Bharat%2C_Shri_Narendra_Damodardas_Modi_at_pristine_beautiful_beaches_at_Bangaram%2C_in_Lakshadweep_%281%29.jpg",
-    "description": "Bangaram is an atoll in the Union Territory of Lakshadweep, India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Intertidal_zone_Lakshadweep.jpg/1280px-Intertidal_zone_Lakshadweep.jpg",
+    "description": "Intertidal zone Lakshadweep is a breathtaking destination in Lakshadweep, offering visitors a truly unforgettable experience.",
     "rating": 4.3
   },
   {
@@ -5603,10 +5555,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 700,
-    "name": "Minicoy Lighthouse",
+    "name": "Kalppeni beach lakshadweep",
     "state": "Lakshadweep",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Lighthouse_worms_eye.jpg",
-    "description": "Minicoy, locally known as Maliku , is an island in Lakshadweep, India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kalppeni_beach_lakshadweep.jpg/1280px-Kalppeni_beach_lakshadweep.jpg",
+    "description": "Kalppeni beach lakshadweep is a breathtaking destination in Lakshadweep, offering visitors a truly unforgettable experience.",
     "rating": 4.9
   },
   {
@@ -5629,7 +5581,7 @@ export const destinations: Destination[] = [
     "id": 703,
     "name": "Sri Aurobindo Ashram",
     "state": "Puducherry",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f3/The-Mothers-Symbol.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Aurobindo_Ashram_Press_at_Goubert_Ave%2C_White_Town%2C_Puducherry_02.jpg/1280px-Aurobindo_Ashram_Press_at_Goubert_Ave%2C_White_Town%2C_Puducherry_02.jpg",
     "description": "The Sri Aurobindo Ashram is a spiritual community located in Pondicherry, in the Indian territory of Puducherry.",
     "rating": 4.3
   },
@@ -5653,7 +5605,7 @@ export const destinations: Destination[] = [
     "id": 706,
     "name": "Arikamedu",
     "state": "Puducherry",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/ChildWithBirdVirampatnamArikamedu1-2Century.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Ruines_de_pondichery.jpg",
     "description": "Arikamedu is an archaeological site in Southern India, in Kakkayanthope, Ariyankuppam Commune, Puducherry.",
     "rating": 4.8
   },
@@ -5667,10 +5619,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 708,
-    "name": "Chunnambar Boat House",
+    "name": "French War Memorial Pondicherry",
     "state": "Puducherry",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Ariyankuppam is a Town, Commune, Sub-Taluk, and Assembly Constituency in the Union Territory of Puducherry, India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/First_world_war_memorial_Pondicherry_01.jpg/1280px-First_world_war_memorial_Pondicherry_01.jpg",
+    "description": "Pondicherry, officially known as Puducherry, is the capital and most populous city of the Union Territory of Puducherry in India.",
     "rating": 4.1
   },
   {
@@ -5747,10 +5699,10 @@ export const destinations: Destination[] = [
   },
   {
     "id": 718,
-    "name": "Goubert Market",
+    "name": "Pondicherry Museum",
     "state": "Puducherry",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
-    "description": "Yanam ) is a town located in the Yanam district in Puducherry, India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Durga_Devi_statue_at_Pondicherry_Museum_15.jpg/1280px-Durga_Devi_statue_at_Pondicherry_Museum_15.jpg",
+    "description": "The Pondicherry Museum is an art and history museum located in Pondicherry, India.",
     "rating": 4.6
   },
   {
